@@ -1,0 +1,161 @@
+@import url('../styles/fonts.css');
+.right-position-container {
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+  }
+  
+  .right-position-topic {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  .right-position-topic h3{
+    font-family: 'Sukhumvit' ,sans-serif;
+    color: #831522;
+    font-size: 28px;
+    border-bottom: 2px solid #831522;
+  }
+  
+  .right-position-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; /* Ensure full width */
+    /* background-color: aqua; */
+  }
+  
+  .right-position-text-container {
+    flex: 2; /* Takes up twice the space on the left */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: blueviolet; */
+   
+  }
+  .right-position-text{
+    /* border: 2px solid black; */
+    padding: 5% 10% 5% 10% ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* background-color: #F9F6F0; */
+    background-color: white;
+  }
+  .right-position-text-container p{
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  .right-position-photo-container {
+    flex: 1; /* Takes up one unit of space on the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+   
+  }
+  .right-photo-parallax{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .right-position-photo-container img {
+   width: 300px;
+   border: 3px solid white;
+   border-radius: 5px;
+  }
+
+  @media (max-width: 1047px) {
+    .right-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 20px;
+        color: black;
+        
+      }
+
+      .right-position-photo-container img {
+        width: 250px;
+        border: 3px solid white;
+       }
+    
+  }
+  
+  @media (max-width: 1025px) {
+    .right-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 22px;
+        color: black;
+        
+      }
+
+      .right-position-photo-container img {
+        width: 250px;
+        border: 3px solid white;
+       }
+    
+  }
+
+  @media (max-width: 971px) {
+    .right-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 18px;
+        color: black;
+        
+      }
+      .right-position-photo-container img {
+        width: 200px;
+        border: 3px solid white;
+       }
+    
+  }
+
+  @media (max-width: 830px) {
+    .right-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 16px;
+        color: black;
+        
+      }
+      .right-position-photo-container img {
+        width: 200px;
+        border: 3px solid white;
+       }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .right-position-content {
+      flex-direction: column;
+      
+    }
+    .right-position-photo-container img {
+        width: 175px;
+        border: 2px solid white;
+        margin-bottom: 2%;
+       }
+  
+   
+    .right-position-text{
+        margin-bottom: 5%;
+    }
+  }
+    
+  @media (max-width: 500px) {
+    .right-position-topic h3{
+      font-family: 'Sukhumvit' ,sans-serif;
+      color: #831522;
+      font-size: 24px;
+      border-bottom: 2px solid #831522;
+    }
+
+    
+  }
+  
+  

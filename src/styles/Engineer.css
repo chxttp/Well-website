@@ -1,0 +1,158 @@
+@import url('../styles/fonts.css');
+.Engineer-title{
+    display: flex;
+    text-align: center;
+  
+    justify-content: center;
+   
+
+}
+.Engineer-title h2{
+    font-family: 'Sukhumvit' , sans-serif;
+    color: #831522;  
+    font-size: 28px;
+    border-bottom: 2px solid #831522;  
+
+}
+.Engineer-container{
+    display: flex;
+    margin-top: 7%;
+    flex-direction: column;
+   padding: 4%;
+  
+    
+}
+.Engineer-img-container{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+.Engineer-img-container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.Engineer-img-profile img{
+    width: 100%;
+    max-width: 300px;
+    
+}
+.Engineer-img-tag{
+   display: flex;
+   align-items: center;
+
+}
+.Engineer-img-tag img{
+    width: 100%;
+    max-width: 400px;
+
+}
+.Engineer-img-container-2{
+  
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+.Engineer-img-content1 img{
+   width: 100%;
+   max-width: 305px;
+   
+}
+.Engineer-img-content2 img{
+    width: 100%;
+    max-width: 300px;
+    
+ }
+
+.Engineer-img-content3 img{
+    width: 100%;
+    max-width: 300px;
+}
+.Engineer-img-content3{
+    display: flex;
+   align-items: center;
+}
+.Engineer-img-content4 img{
+    width: 100%;
+    max-width: 300px;
+}
+.Engineer-img-content4{
+    display: flex;
+   align-items: center;
+}
+@media (max-width: 1304px) {
+    .Engineer-img-profile img{
+        width: 100%;
+        max-width: 200px;
+       
+        
+    }
+    .Engineer-img-tag img{
+        width: 100%;
+        max-width: 300px;
+    
+    }
+    .Engineer-img-content1 img{
+        width: 100%;
+        max-width: 205px;
+        
+     }
+     .Engineer-img-content2 img{
+         width: 100%;
+         max-width: 200px;
+         
+    }
+    .Engineer-img-content3 img{
+        width: 100%;
+        max-width: 200px;
+
+    }
+    .Engineer-img-content4 img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    
+}
+/* @media (max-width: 1047px) {
+    .Engineer-img-profile img{
+        width: 80%;
+        max-width: 200px;
+        
+    }
+    .Engineer-img-tag img{
+        width: 80%;
+        max-width: 300px;
+    
+    }
+
+    .Engineer-img-content1 img{
+        width: 80%;
+        max-width: 255px;
+        
+     }
+     .Engineer-img-content2 img{
+         width: 80%;
+         max-width: 250px;
+         
+    }
+    .Engineer-img-content3 img{
+        width: 80%;
+        max-width: 250px;
+
+    }
+    .Engineer-img-content4 img{
+        width: 80%;
+        max-width: 250px;
+    }
+
+    
+} */
+@media (max-width : 500px){
+    .Engineer-title{
+        font-size: 24px;
+    }
+}

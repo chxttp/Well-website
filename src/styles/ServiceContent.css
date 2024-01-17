@@ -1,0 +1,167 @@
+@import url('../styles/fonts.css');
+.ServiceContent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    padding-top: 4%;
+    background-color: #f9f9fa;
+  }
+  
+  .service-topic {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #831522;;
+    color: #831522;
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 32px;
+  }
+ 
+  
+  .service-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 3%;
+    
+  }
+  
+  .parallax {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+  }
+  
+  
+  .service-image-left,
+  .service-image-right {
+    width: 65%;
+    height: auto;
+   
+  }
+
+  .service-text-container{
+    
+    padding: 2% 10% 2% 10%;
+    margin-top: 1%;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .service-text {
+    text-align: left;
+
+   
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 17px;
+  }
+  .service-text-topic{
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 28px;
+    width: fit-content;
+    color: #831522;
+    border-bottom: 2px solid ;
+    margin-bottom: 2%;
+  }
+  @media (max-width : 1024px) 
+  {
+    .service-topic {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 4%;
+        border-bottom: 2px solid #831522;;
+        color: #831522;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 28px;
+      }
+     
+    .service-text {
+        text-align: left;
+       
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 16px;
+      }
+      .service-text-topic{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 26px;
+        width: fit-content;
+        color: #831522;
+        border-bottom: 2px solid ;
+        margin-bottom: 2%;
+      }
+    
+  }
+
+  @media (max-width : 720px) 
+  {
+    .ServiceContent-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+        padding-top: 10%;
+      }
+    .service-topic {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 4%;
+        border-bottom: 2px solid #831522;;
+        color: #831522;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 26px;
+      }
+     
+    .service-text {
+        text-align: left;
+       
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 13px;
+      }
+      .service-text-topic{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 24px;
+        width: fit-content;
+        color: #831522;
+        border-bottom: 2px solid ;
+        margin-bottom: 2%;
+      }
+    
+  }
+
+  @media (max-width : 500px) 
+  {
+    .service-topic {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 4%;
+        border-bottom: 2px solid #831522;;
+        color: #831522;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 24px;
+      }
+     
+    .service-text {
+        text-align: left;
+       
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 13px;
+      }
+      .service-text-topic{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 16px;
+        width: fit-content;
+        color: #831522;
+        border-bottom: 2px solid ;
+        margin-bottom: 2%;
+      }
+    
+  }

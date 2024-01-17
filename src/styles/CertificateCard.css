@@ -1,0 +1,129 @@
+@import url('../styles/fonts.css');
+.certificate-container {
+   border-radius: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  
+   
+   
+ 
+    
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  
+ 
+ 
+  
+  
+}
+
+  .card-image-wrapper{
+    /* background-color: #d0d4df; */
+    background-color: #f7f0f0; 
+    
+   width: 100%;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   padding: 10%;
+   border-radius: 1%;
+
+   
+   
+  }
+  .card-image{
+    display: flex;
+   justify-content: center;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 5%;
+  }
+  .card-image img{
+    width: 50%;
+  }
+  
+  
+  .card-details {
+    text-align: center;
+    padding: 5%;
+    background-color: white;
+    border-radius: 1%;
+    margin-bottom: 10%;
+  }
+  
+  .card-title {
+    font-size: 27px;
+    margin-bottom: 10%;
+    font-family: 'Sukhumvit' , sans-serif;
+    font-weight: bold;
+  }
+ 
+  
+  .card-description {
+    font-size: 18px;
+    font-family: 'Sukhumvit' , sans-serif;
+   
+  }
+  @media (max-width : 1024px) {
+    .card-title {
+      font-size: 25px;
+      margin-bottom: 10%;
+      font-family: 'Sukhumvit' , sans-serif;
+      font-weight: bold;
+    }
+   
+    
+    .card-description {
+      font-size: 16px;
+      font-family: 'Sukhumvit' , sans-serif;
+     
+    }
+    
+    
+  }
+
+  @media (max-width : 750px) {
+    .card-title {
+      font-size: 22px;
+      margin-bottom: 10%;
+      font-family: 'Sukhumvit' , sans-serif;
+      font-weight: bold;
+    }
+   
+    
+    .card-description {
+      font-size: 13px;
+      font-family: 'Sukhumvit' , sans-serif;
+     
+    }
+    
+    
+  }
+
+  @media (max-width : 550px) {
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10%;
+      font-family: 'Sukhumvit' , sans-serif;
+      font-weight: bold;
+    }
+   
+    
+    .card-description {
+      font-size: 12px;
+      font-family: 'Sukhumvit' , sans-serif;
+     
+    }
+    
+    
+  }
+  
+  
+  
+   

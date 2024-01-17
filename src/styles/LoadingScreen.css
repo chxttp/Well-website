@@ -1,0 +1,36 @@
+/* styles/LoadingScreen.css */
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: #f9f9fa;
+  }
+  
+  .loading-img {
+    width: 100%;
+    max-width: 1250px; /* Set the maximum width for the image */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  }
+  
+  .loading-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .loading-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333; /* Set the desired text color */
+    margin-top: 10px;
+  }
+  

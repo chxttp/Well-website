@@ -1,0 +1,13 @@
+.Principle-container{
+    display: flex;
+    border: 3px solid white;
+
+  
+  
+
+    
+}
+.Principle-card {
+    display: flex;
+    justify-content: center;
+}

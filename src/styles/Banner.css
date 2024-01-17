@@ -1,0 +1,136 @@
+.top-banner{
+    /* background-color: #FFEED5; */
+    
+    width: 100%;
+  
+    
+    
+}
+.banner-container{
+    /* padding-top: 4%; */
+    height: 100%;
+    
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+}
+
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    /* border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white; */
+}
+@media only screen and (max-width: 1024px) {
+    .banner-container{
+        padding-top: 8%;
+        
+    }
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+    .slide{
+        background-color: black;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .banner-container{
+        padding-top: 9%;
+        
+    }
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+    .slide{
+        background-color: black;
+    }
+}
+@media (max-width: 800px) {
+    .banner-container{
+        padding-top: 10%;
+        
+    }
+    
+}
+@media (max-width: 700px) {
+    .banner-container{
+        padding-top: 12%;
+        
+    }
+    
+}
+@media (max-width: 600px) {
+    .banner-container{
+        padding-top: 14%;
+        
+    }
+    
+}
+@media (max-width : 500px) {
+  .slide img{
+    border: none;
+  }
+  .banner-container{
+    padding-top: 16%;
+    
+}
+@media (max-width: 430px) {
+    .banner-container{
+        padding-top: 18%;
+        
+    }
+    
+}
+    
+}
+@media (max-width: 418px) {
+    .banner-container{
+        padding-top: 19%;
+        
+    }
+    
+}
+@media (max-width: 369px) {
+    .banner-container{
+        padding-top: 22%;
+        
+    }
+    
+}
+@media (max-width: 339px) {
+    .banner-container{
+        padding-top: 22%;
+        
+    }
+    
+}
+@media (max-width: 330px) {
+    .banner-container{
+        padding-top: 24%;
+        
+    }
+    
+}
+@media (max-width: 268px) {
+    .banner-container{
+        padding-top: 28%;
+        
+    }
+    
+}
+
+
+    
+
+@media (max-width: 250px) {
+    .banner-container{
+        padding-top: 30%;
+        
+    }
+    
+    
+}

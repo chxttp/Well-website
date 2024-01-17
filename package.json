@@ -3,12 +3,41 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-spring/web": "^9.7.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^10.18.0",
+    "hero-slider": "^3.2.0",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "owl-carousel": "^1.0.0",
+    "radium": "^0.26.2",
     "react": "^18.2.0",
+    "react-coverflow": "^0.2.16",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.49.2",
+    "react-icons": "^4.12.0",
+    "react-id-swiper": "^4.0.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-jquery-plugin": "^1.1.7",
+    "react-owl-carousel": "^2.3.3",
+    "react-reveal": "^2.0.0",
+    "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-scroll-parallax": "^3.4.5",
+    "react-slick": "^0.29.0",
+    "react-spring": "^9.7.3",
+    "slick-carousel": "^1.8.1",
+    "spring": "^0.0.0",
+    "styled-components": "^6.1.1",
+    "swiper": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +63,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }

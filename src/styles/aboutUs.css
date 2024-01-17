@@ -1,0 +1,58 @@
+.aboutUs-container{
+  overflow: hidden;
+  opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Apply transition to opacity property */
+}
+.AboutUsContent{
+  /* background-color: #F6EEE0; */
+  background-color: #f9f9fa;
+
+}
+.fade-in {
+  opacity: 1; /* Set opacity to 1 for the fade-in effect */
+}
+
+.Footer{
+  overflow: hidden;
+}
+.Banner{
+  /* background-image: url("../Images/bg.jpg"); */
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+}
+.company-position{
+  margin-top: 4%;
+}
+.aboutUs-title{
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #e9eaee ; */
+  background-color: #f9f9fa;
+
+}
+.aboutUs-title h2{
+  font-family: 'Sukhumvit' , sans-serif;
+  font-size: 28px;
+  color: #831522;
+  border-bottom: 2px solid #831522;
+}
+
+@media (max-width : 500px) {
+  .aboutUs-title h2{
+    font-family: 'Sukhumvit' , sans-serif;
+    font-size: 24px;
+    color: #831522;
+    border-bottom: 2px solid #831522;
+  }
+  .aboutUs-title{
+    padding-top: 7%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #e9eaee ; */
+    background-color: #f9f9fa;
+  
+  }
+
+  
+}

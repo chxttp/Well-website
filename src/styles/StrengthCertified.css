@@ -1,0 +1,68 @@
+/* Overall Container */
+@import url('../styles/fonts.css');
+.strength-certified-container {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f5f5f5;  */
+    background-color: #e9eaee ;
+  }
+  .strength-certified-title{
+    margin-bottom: 4%;
+  }
+  .strength-certified-title h2{
+    font-family: 'Sukhumvit' , sans-serif;
+    font-size: 28px;
+    color: #831522;
+  }
+  
+  /* Wrapper */
+  .strength-certified-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+    width: 100%; /* Ensure the wrapper takes the full width */
+  }
+  
+  /* Individual Content Blocks */
+  .strength-certified-content1,
+  .strength-certified-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 48%; /* Adjust the width to leave some space between the two blocks */
+  }
+  .strength-certified-parallax {
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  /* Image Containers */
+  .strength-certified-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-bottom: 4%;
+  }
+  
+  /* Text Containers */
+  .strength-certified-text-container {
+    text-align: center;
+    
+  }
+  
+  /* Text Elements */
+  .strength-certified-text p {
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 18px;
+    /* Adjust font, size, color, and spacing as needed */
+  }
+  

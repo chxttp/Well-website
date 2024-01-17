@@ -1,0 +1,9 @@
+.Service-container{
+    overflow: hidden;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Apply transition to opacity property */
+
+}
+.fade-in {
+    opacity: 1; /* Set opacity to 1 for the fade-in effect */
+  }

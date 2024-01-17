@@ -1,0 +1,16 @@
+/* VideoPlayer.css or your relevant CSS file */
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  video {
+    /* Your existing styles for the video element */
+    width: 100%; /* Adjust as needed */
+  }
+  
+  
+  

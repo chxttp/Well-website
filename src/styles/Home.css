@@ -1,0 +1,177 @@
+@import url('../styles/fonts.css');
+
+.home-container{
+    overflow: hidden;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Apply transition to opacity property */
+}
+
+/* .NavBar{
+    margin-bottom: auto;
+} */
+.fade-in {
+    opacity: 1; /* Set opacity to 1 for the fade-in effect */
+}
+
+.Policy{
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+   
+    display: flex;
+    justify-content: center;
+}
+.Certificate{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    padding: 7%;
+    background-color: #f9f9fa;
+}
+.Certificate-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+.Certificate button{
+    margin-top: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Sukhumvit" , sans-serif;
+}
+.Certificate button:hover{
+    color: white;
+    background-color: #831522;
+    transition: 0.5s;
+}
+
+.Certificate-section-text{
+    margin-bottom: 4%;
+}
+.Certificate-section-text h3{
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 32px;
+    color: #831522;
+    border-bottom: 2px solid #831522;;
+
+}
+
+.Principle{
+   
+    
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* background-color: #f9f9fa; */
+    background-color: white;
+   
+    
+   
+  
+    
+}
+
+
+.Video{
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+    /* background-image: url("../Images/bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* .Banner{
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    background-color: #f9f9fa;
+    height: 100%;
+    
+   
+    } */
+    
+    
+    .Certificate{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 700px) {
+    .Certificate-section-text{
+        margin-bottom: 7%;
+    }
+    
+    .Principle{
+   
+    
+        display: none;
+       
+        
+       
+      
+        
+    }
+    .Certificate-section-text h3{
+        font-size: 32px;
+    }
+
+    .Certificate button{
+        margin-top: 30%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 35px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Sukhumvit" , sans-serif;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .Certificate-section-text{
+        margin-bottom: 8%;
+    }
+    .Principle{
+   
+    
+        display: none;
+       
+        
+       
+      
+        
+    }
+    .Certificate-section-text h3{
+        font-size: 24px;
+    }
+
+    .Certificate button{
+        margin-top: 30%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 35px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Sukhumvit" , sans-serif;
+    }
+    
+      
+    
+}
+

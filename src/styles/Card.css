@@ -1,0 +1,238 @@
+.container{
+   padding-top: 4%;
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+    overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    
+    
+   
+}
+
+.card-container {
+    width: 1450px;
+    height: 320px;
+    background-image: url("../Images/policy.JPEG");
+    background-size: 1450px 320px;
+    background-repeat: no-repeat, repeat;
+    object-fit: cover;
+    border-radius: 10px;
+  
+   
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+  }
+  
+  .card-container p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+
+  
+  @media only screen and (max-width: 1600px) {/*ipad*/
+    .container{
+        padding-top :4%  2px 2px 2px ;
+        
+        /* background-color: #F6EEE0; */
+     
+       
+    }
+    .card-container {
+      width: 1150px;
+      height: 300px;
+      background-size: 1150px 300px;
+      background-repeat: no-repeat, repeat;
+     
+      color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+  
+    
+    
+  }
+
+@media only screen and (max-width: 1300px) {/*ipad*/
+  .container{
+      padding-top :4%  2px 2px 2px ;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 1100px;
+    height: 300px;
+    background-size: 1100px 300px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  
+  
+}
+
+@media only screen and (max-width: 1150px) {/*ipad*/
+  .container{
+      padding-top :4%  2px 2px 2px ;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 900px;
+    height: 200px;
+    background-size: 900px 200px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  
+  
+}
+
+@media only screen and (max-width: 1024px) {/*ipad*/
+  .container{
+      padding-top :10% ;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 800px;
+    height: 200px;
+    background-size: 800px 200px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  
+  
+}
+
+@media only screen and (max-width: 902px) {
+  .container{
+      padding: 10% 4px 4px 4px;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 700px;
+    height: 200px;
+    background-size: 700px 200px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 750px) {
+  .container{
+      padding: 10% 4px 4px 4px;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 550px;
+    height: 200px;
+    background-size: 550px 200px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+      padding: 10% 2px 2px 2px;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 300px;
+    height: 100px;
+    background-size: 300px 100px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 300px) {/*ipad*/
+  .container{
+      padding: 10% 2px 2px 2px;
+      
+      /* background-color: #F6EEE0; */
+   
+     
+  }
+  .card-container {
+    width: 250px;
+    height: 100px;
+    background-size: 250px 100px;
+    background-repeat: no-repeat, repeat;
+   
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  
+}
+

@@ -1,0 +1,169 @@
+@import url('../styles/fonts.css');
+.left-position-container {
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+    
+  }
+  
+  
+  .left-position-topic {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  .left-position-topic h3{
+    font-family: 'Sukhumvit' ,sans-serif;
+    color: #831522;
+    font-size: 28px;
+    border-bottom: 2px solid #831522;
+  }
+  
+  .left-position-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; /* Ensure full width */
+    /* background-color: aqua; */
+  }
+  
+  .left-position-text-container {
+    flex: 2; /* Takes up twice the space on the left */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+
+    /* background-color: blueviolet; */
+   
+  }
+  .left-position-text{
+    /* border: 2px solid black; */
+    padding: 5% 10% 5% 10% ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* background-color: #F9F6F0; */
+    background-color: white;
+  }
+  .left-position-text-container p{
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  .left-position-photo-container {
+    flex: 1; /* Takes up one unit of space on the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+   
+  }
+  .left-photo-parallax{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .left-position-photo-container img {
+   width: 300px;
+   border: 3px solid white;
+   border-radius: 5px;
+   
+  }
+
+  @media (max-width: 1047px) {
+    .left-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 20px;
+        color: black;
+        
+      }
+
+      .left-position-photo-container img {
+        width: 250px;
+        border: 3px solid white;
+       }
+    
+  }
+
+  @media (max-width: 1025px) {
+    .left-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 22px;
+        color: black;
+        
+      }
+
+      .left-position-photo-container img {
+        width: 250px;
+        border: 3px solid white;
+       }
+    
+  }
+
+  @media (max-width: 971px) {
+    .left-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 18px;
+        color: black;
+        
+      }
+      .left-position-photo-container img {
+        width: 200px;
+        border: 3px solid white;
+       }
+    
+  }
+
+  @media (max-width: 830px) {
+    .left-position-text-container p{
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 16px;
+        color: black;
+        
+      }
+      .left-position-photo-container img {
+        width: 200px;
+        border: 3px solid white;
+       }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .left-position-content {
+      flex-direction: column;
+      
+    }
+    .left-position-photo-container img {
+        width: 175px;
+        border: 2px solid white;
+        margin-bottom: 2%;
+       }
+  
+    .left-position-photo-container {
+      order: -1; /* Change the order for smaller screens */
+    }
+    .left-position-text{
+        margin-bottom: 5%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .left-position-topic h3{
+      font-family: 'Sukhumvit' ,sans-serif;
+      color: #831522;
+      font-size: 24px;
+      border-bottom: 2px solid #831522;
+    }
+
+    
+  }
+  
+  
+  

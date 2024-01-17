@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('../styles/fonts.css');
+.Certificate-container {
+    /* background-color: #F6EEE0; */
+    background-color: #f9f9fa;
+    /* background-color: white; */
+   
+    /* background-image: url("../Images/bg2.webp"); */
+    
+    background-size: 100%;
+    justify-content: center;
+    padding-top: 4%;
+    
+  }
+  
+  .Certificate-text {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #831522;
+    font-size: 28px;
+    padding: 0 25px;
+    
+   
+  }
+  
+  .Certificate-text h3 {
+    
+    font-family: 'Sukhumvit', sans-serif;
+    
+    border-bottom: 2px solid #831522;
+   
+  }
+  
+  .Certificate-card {
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    
+    padding-left: 7%;
+   padding-right: 7%;
+  
+   
+   
+    
+  }
+  
+  /* .Certificate-card > * {
+    width: 48%; 
+    margin: 1%; 
+  } */
+
+  .Certificate-card > * {
+    width: calc(33.33% - 2%); /* Adjust the width to fit three cards with 2% margin between them */
+    margin: 1%; /* Adjust the margin as needed */
+}
+  @media only screen and (max-width: 1024px) {
+    .Certificate-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       
+        color: #831522;
+       
+      }
+      .Certificate-card > * {
+    width: 48%; 
+    margin: 1%; 
+  }
+  .Certificate-container {
+    /* background-color: #F6EEE0; */
+    justify-content: center;
+    padding-top: 10%;
+    
+  }
+    
+    
+}
+
+@media (max-width : 700px) {
+  .Certificate-text h3 {
+    
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid #831522;
+   
+  }
+}
+
+@media (max-width : 500px) {
+  .Certificate-text h3 {
+    
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 24px;
+    border-bottom: 2px solid #831522;
+   
+  }
+  .Certificate-card {
+    padding-top: 12%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    
+    padding-left: 7%;
+   padding-right: 7%;
+  
+   
+   
+    
+  }
+
+  
+}

@@ -1,0 +1,76 @@
+@import url('../styles/fonts.css');
+
+.principleCard-container {
+    position: relative;
+    justify-content: center;
+  }
+  
+  .principleCard-image {
+    cursor: pointer;
+    width: 184px; /* Set the image width to fill the container */
+    height: 263px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    font-family: 'Sukhumvit', sans-serif;
+    text-align: left;
+  }
+  
+  .main-text {
+    margin-bottom: 5px; /* Add some margin between main text and sub-text */
+  }
+  
+  .sub-text {
+    font-size: 13px; /* Adjust the font size for sub-text */
+    
+  }
+  
+  
+  
+  
+  .principleCard-container:hover .principleCard-image {
+    content: url('../Images/redPrinciple.jpeg');
+    transition: 0.5s;
+   
+  }
+  .principleCard-container:hover .overlay-text {
+    color: white; /* Change text color on hover */
+    transition: 0.5s;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .principleCard-container {
+      width: 150px;
+      height: 200px;
+      justify-content: center;
+      display: none;
+      overflow: auto; /* Enable scrolling on smaller screens */
+      
+    }
+  
+    .principleCard-image {
+      width: 120px;
+      height: 170px;
+    }
+  
+    .overlay-text {
+      left: 5%;
+      font-size: 12px;
+    }
+  
+    .sub-text {
+      font-size: 10px;
+    }
+  
+    
+    
+  }
+  

@@ -1,0 +1,366 @@
+@import url('../styles/fonts.css');
+.Contact-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  .Contact-container{
+    background-color: #f9f9fa;
+    overflow: hidden;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Apply transition to opacity property */
+
+  }
+  .fade-in {
+    opacity: 1; /* Set opacity to 1 for the fade-in effect */
+  }
+  .Contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .Contact-info{
+    flex: 1;
+    padding: 20px;
+    
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .Contact-form {
+    padding: 20px;
+    flex: 1; /* Equal width, adjust as needed */
+   
+    margin-right: 2%;
+   
+  }
+  
+  .Contact-info h2 {
+    margin-bottom: 10px;
+  }
+  .contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3%;
+  }
+  
+  .contact-address-eng{
+    padding: 20px;
+    flex: 1;
+   
+  }
+  .contact-address-thai{
+    padding: 20px;
+    flex: 1;
+   
+  }
+  .contact-address-eng p {
+    margin-bottom: 10px;
+    font-family: 'Sukhumvit', sans-serif;
+   
+  }
+  .contact-address-thai p {
+    margin-bottom: 10px;
+    font-family: 'Sukhumvit', sans-serif;
+   
+  }
+  .thankYou{
+    font-family: 'Sukhumvit', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  .Contact-info h2{
+    font-family: 'Sukhumvit', sans-serif;
+    color: #831522;  
+  }
+  .Contact-form-text{
+   text-align: center;
+   
+   margin-bottom: 4%;
+   display: flex;
+   justify-content: center;
+   color: #831522;
+   
+ 
+   
+  }
+  .Contact-form-text h2{
+    border-bottom: 2px solid #831522;
+    font-family: 'Sukhumvit', sans-serif;
+    
+  }
+  .contact-address-eng h3{
+    font-family: 'Sukhumvit', sans-serif;
+    margin-bottom: 10px;
+    color: #831522;
+    
+  }
+  .contact-address-thai h3{
+    font-family: 'Sukhumvit', sans-serif;
+    margin-bottom: 10px;
+    color: #831522;
+    
+  }
+  .contact-address-eng b{
+    font-family: 'Sukhumvit', sans-serif;
+    color: #831522;
+  }
+
+  .contact-address-thai b{
+    font-family: 'Sukhumvit', sans-serif;
+    color: #831522;
+  }
+  label{
+    font-family: 'Sukhumvit', sans-serif;
+    color: #831522;
+  }
+  
+  .Contact-form form {
+    width: 100%;
+  }
+  
+  .Contact-form label {
+    margin-bottom: 5px;
+  }
+  
+  .Contact-form input,
+  .Contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .Contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .Contact-form button:hover{
+    color: white;
+    background-color: #831522;
+    transition: 0.5s;
+  }
+  .Contact-info img {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  @media only screen and (max-width: 1024px) {
+  
+    
+    
+      .Contact-form button {
+        margin-bottom: 4%;
+      }
+      .contact-address-eng p {
+        margin-bottom: 10px;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 14px;
+       
+      }
+      .contact-address-thai p{
+        
+            margin-bottom: 10px;
+            font-family: 'Sukhumvit', sans-serif;
+            font-size: 14px;
+           
+        
+      }
+      .Contact-info h2{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;  
+        font-size: 18px;
+        
+      }
+      
+      .Contact-form-text h2{
+        border-bottom: 2px solid #831522;
+       
+       
+        
+      }
+      .contact-address-eng h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+
+      .contact-address-thai h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+      .contact-address-eng b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      .contact-address-thai b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      label{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 14px;
+      }
+  }
+  
+  @media only screen and (max-width: 917px) {
+  
+    .Contact-info,
+    .Contact-form {
+      flex: none;
+      width: 100%;
+    }
+    
+      .Contact-form button {
+        margin-bottom: 4%;
+      }
+      .contact-address-eng p {
+        margin-bottom: 10px;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 14px;
+       
+      }
+      .contact-address-thai p {
+        margin-bottom: 10px;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 14px;
+       
+      }
+      .Contact-info h2{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;  
+        font-size: 18px;
+        
+      }
+      
+      .Contact-form-text h2{
+        border-bottom: 2px solid #831522;
+       
+       
+        
+      }
+      .contact-address-eng h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+      .contact-address-thai h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+      .contact-address-eng b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      .contact-address-thai b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      label{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 14px;
+      }
+  }
+
+  @media only screen and (max-width: 500px) {
+  
+    .Contact-info,
+    .Contact-form {
+      flex: none;
+      width: 100%;
+    }
+    
+      .Contact-form button {
+        margin-bottom: 4%;
+      }
+      .contact-address-eng p {
+        margin-bottom: 10px;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 12px;
+       
+      }
+      .contact-address-thai p {
+        margin-bottom: 10px;
+        font-family: 'Sukhumvit', sans-serif;
+        font-size: 12px;
+       
+      }
+      .Contact-info h2{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;  
+        font-size: 16px;
+        
+      }
+      
+      .Contact-form-text h2{
+        border-bottom: 2px solid #831522;
+       
+       
+        
+      }
+      .contact-address-eng h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+      .contact-address-thai h3{
+        font-family: 'Sukhumvit', sans-serif;
+        margin-bottom: 10px;
+        color: #831522;
+        font-size: 14px;
+        
+      }
+      .contact-address-eng b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      .contact-address-thai b{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 12px;
+      }
+      label{
+        font-family: 'Sukhumvit', sans-serif;
+        color: #831522;
+        font-size: 14px;
+      }
+  }
+
+
+  
+  /* New styles for image */
+  
+  
+  

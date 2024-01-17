@@ -1,0 +1,38 @@
+@import url('../styles/fonts.css');
+
+
+.swiper-slide img {
+  
+  height: auto;
+  width: 100%;
+  
+}
+
+
+
+.swiper-container{
+  padding-top: 7%;
+  /* background-color: #F6EEE0;; */
+  background-color: #f9f9fa;
+
+}
+.swiper-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #831522;
+  font-size: 28px;
+  padding: 50px 25px;
+}
+.swiper-text h3{
+  font-family: 'Sukhumvit', sans-serif;
+    
+    border-bottom: 2px solid #831522;
+}
+@media (max-width : 500px) {
+  .swiper-text h3{
+    font-size: 24px;
+  }
+  
+}

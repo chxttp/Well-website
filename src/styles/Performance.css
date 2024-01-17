@@ -1,0 +1,12 @@
+.Performance-container{
+    /* background-color: #f9f9fa; */
+    /* background-color: #e9eaee ; */
+    background-color: #f5f5f5; 
+    overflow: hidden;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Apply transition to opacity property */
+
+}
+.fade-in {
+    opacity: 1; /* Set opacity to 1 for the fade-in effect */
+  }

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('../styles/fonts.css');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Titillium Web", sans-serif; */
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 115px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem 0 5rem;
+  color: black;
+  position: fixed;
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header.scrolled {
+  background-color: #f9f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 2rem;
+  /* color: #f9f9fa; */
+  color: #e3e1e0;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Sukhumvit', sans-serif;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Set initial z-index */
+}
+
+nav a:hover {
+  color: #FFD369;
+  transition: 0.5s;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #831522;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+/* Add this style for responsive navigation */
+.responsive_nav {
+  position: absolute; /* Overlays content when open */
+  top: 80px; /* Adjust based on your navbar height */
+  left: 0;
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+   background-color: #f9f9fa;
+  transform: translateY(-100vh);
+  z-index: 1001; /* Increase z-index to cover content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.responsive_nav .logo-container {
+ display: flex;
+  top: 2rem;
+  left: 5rem;
+}
+
+nav .nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+
+
+header {
+  padding: 0 1rem 0 2rem;
+}
+
+.content-container { /* Add this section if you have main content below the navbar */
+  padding-top: 100px; /* Adjust based on your navbar height */
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    
+    visibility: hidden;
+    transform: translateY(-100vh);
+    
+    
+  }
+
+  
+
+  header .responsive_nav {
+    transform: none;
+    visibility: visible;
+    transition: 1s;
+  }
+  .responsive_nav a{
+    font-size: 17px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+   
+    color: black;
+    position: fixed;
+    width: 100%;
+    background-color: #f9f9fa;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  nav a{
+    color: black;
+  }
+  nav a:hover {
+    color: #831522 ;
+    transition: 0.5s;
+  }
+}
