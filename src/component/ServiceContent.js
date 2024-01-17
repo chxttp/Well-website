@@ -1,8 +1,19 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
-import { Fade } from 'react-awesome-reveal';
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import "../styles/ServiceContent.css";
-
+const fadeInUp = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+`;
 const ServiceContent = ({
   topic,
   imageLeft,
@@ -16,29 +27,40 @@ const ServiceContent = ({
     <div className="ServiceContent-container">
       <h2 className="service-topic">{topic}</h2>
       <div className="service-images">
-        <Parallax y={[-20, 20]} className="parallax">
-          <Fade left duration={2000}>
+        <Reveal keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
+          <div className="service-images-wrapper">
             <img src={imageLeft} alt="" className="service-image-left" />
-          </Fade>
-        </Parallax>
-        
-        <Parallax y={[-20, 20]} className="parallax">
-          <Fade right duration={2000}>
+          </div>
+        </Reveal>
+
+        <Reveal keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
+          <div className="service-images-wrapper">
             <img src={imageRight} alt="" className="service-image-right" />
-          </Fade>
-        </Parallax>
+          </div>
+        </Reveal>
       </div>
       <div className="service-images">
-        <Parallax y={[-20, 20]} className="parallax">
-          <Fade left duration={2000}>
-            <img src={image3} alt="" className="service-image-left" />
-          </Fade>
-        </Parallax>
-        <Parallax y={[-20, 20]} className="parallax">
-          <Fade right duration={2000}>
-            <img src={image4} alt="" className="service-image-right" />
-          </Fade>
-        </Parallax>
+        <Reveal keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
+        <div className="service-images-wrapper">
+              <img src={image3} alt="" className="service-image-left" />
+            </div>
+
+        </Reveal>
+       
+         
+            
+          
+       
+       
+        <Reveal keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
+        <div className="service-images-wrapper">
+              <img src={image4} alt="" className="service-image-right" />
+            </div>
+
+        </Reveal>
+
+          
+    
       </div>
       <div className="service-text-container">
         <h2 className="service-text-topic">{topic2}</h2>

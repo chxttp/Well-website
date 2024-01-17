@@ -28,6 +28,9 @@
     border: 1px solid white;
     object-fit: cover;
   }
+  .Reveal{
+    width: 100%;
+  }
   
   .performance-component-title {
     

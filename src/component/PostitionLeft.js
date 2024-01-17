@@ -1,6 +1,30 @@
 import "../styles/PositionLeft.css";
-import { Parallax } from "react-scroll-parallax";
-import { Fade } from 'react-awesome-reveal';
+import {Reveal} from 'react-awesome-reveal'
+import { keyframes } from "@emotion/react";
+const fadeInLeft = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+`;
+const fadeInRight = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+`;
 function PositionLeft({ positionText, image1, image2, name, position }) {
   return (
     <div className="left-position-container">
@@ -10,23 +34,26 @@ function PositionLeft({ positionText, image1, image2, name, position }) {
       <div className="left-position-content">
         <div className="left-position-text-container">
           <div className="left-position-text">
-            <Parallax>
-              <Fade left  duration={2000}>
+            <Reveal keyframes={fadeInLeft}  delay={300} duration={600} triggerOnce >
                 <p>{name}</p>
                 <p>{position}</p>
-              </Fade>
-            </Parallax>
+            </Reveal>
+            
+               
+            
           </div>
         </div>
         
         <div className="left-position-photo-container">
-          <Parallax className="left-photo-parallax">
-            <Fade right duration={2000}>
-            <img src={image1} alt="" />
+          <Reveal keyframes={fadeInRight}  delay={300} duration={600} triggerOnce >
+          <img src={image1} alt="" />
           <img src={image2} alt="" />
 
-            </Fade>
-          </Parallax>
+          </Reveal>
+          
+            
+
+            
           
 
         </div>

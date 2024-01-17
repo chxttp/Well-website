@@ -1,17 +1,32 @@
 import strength2 from '../Images/strength2.jpeg'
-import { Parallax } from 'react-scroll-parallax';
-import { Fade } from 'react-awesome-reveal';
+import {  Reveal } from 'react-awesome-reveal';
+import { keyframes } from "@emotion/react";
 import '../styles/StrengthPolicy.css'
+const fadeInLeft = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+`;
+
 function StrengthPolicy() {
     return (
         <div className="key-strength-wrapper">
         <div className="key-strength-photo-container">
-          <Parallax>
-            <Fade left  duration={2000}>
-            <img src={strength2} alt="" />
+          <Reveal keyframes={fadeInLeft} delay={300} duration={600} triggerOnce>
+          <img src={strength2} alt="" />
 
-            </Fade>
-          </Parallax>
+          </Reveal>
+          
+           
+
+            
 
           
         </div>
