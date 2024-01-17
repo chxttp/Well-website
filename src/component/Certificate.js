@@ -6,8 +6,8 @@ import image3 from "../Images/Certificate3.JPG";
 import image4 from "../Images/Certificate4.JPG";
 import image5 from "../Images/Certificate5.JPG";
 import image6 from "../Images/Certificate6.jpg"
-import image7 from "../Images/Certificate7.jpg";
-import image8 from "../Images/Certificate8.jpg";
+// import image7 from "../Images/Certificate7.jpg";
+// import image8 from "../Images/Certificate8.jpg";
 
 function Certificate() {
   const certificateData = [

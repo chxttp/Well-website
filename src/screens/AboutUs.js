@@ -4,10 +4,6 @@ import Footer from "../component/Footer";
 import Banner from "../component/Banner";
 import DownloadFile from "../component/DownloadFile";
 import image1 from "../Images/aboutUs_banter.jpeg";
-import maguire1 from "../Images/maguire1.jpeg";
-import maguire2 from "../Images/maguire2.jpeg";
-import aboutUs1 from "../Images/aboutUs1.png";
-import aboutUs2 from "../Images/aboutUs2.png";
 import aboutUs3 from '../Images/aboutUs3.png'
 import aboutUs4 from '../Images/aboutUs4.png'
 import factoryManager1 from "../Images/ทรงกรด.jpg";

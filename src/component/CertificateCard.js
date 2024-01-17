@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/CertificateCard.css";
 
 function CertificateCard({ imageUrl, cardName, isMiddleCard, cardTitle }) {
-  const cardClassName = isMiddleCard ? "middle-card" : "";
+  // const cardClassName = isMiddleCard ? "middle-card" : "";
 
   
   return (

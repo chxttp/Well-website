@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import logo from "../Images/logo.png";
 import "../styles/Navbar.css";
 

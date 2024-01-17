@@ -3,8 +3,8 @@ import EngineerProfile from "../Images/engineer-img.JPG";
 import EngineerTag from "../Images/engineer-tag.JPG";
 import Engineer1 from "../Images/enginner1.jpg";
 import Engineer2 from "../Images/enginner2.jpg";
-import Engineer3 from "../Images/engineer3.jpg";
-import Engineer4 from "../Images/engineer4.jpg";
+// import Engineer3 from "../Images/engineer3.jpg";
+// import Engineer4 from "../Images/engineer4.jpg";
 import Engineer5 from "../Images/engineer5.jpg";
 import Engineer6 from "../Images/engineer6.jpg";
 function Engineer() {

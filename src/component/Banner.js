@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,7 @@ import "../styles/Banner.css";
 
 
 function Banner({images}) {
-  const [autoplayInterval, setAutoplayInterval] = useState(null);
+  
   const sliderRef = useRef(null);
 
   const settings = {
@@ -27,7 +27,7 @@ function Banner({images}) {
       slickNext();
     }, 6000);
 
-    setAutoplayInterval(interval);
+   
 
     return () => {
       clearInterval(interval);
@@ -46,7 +46,7 @@ function Banner({images}) {
       <div className="top-banner"></div>
       <Slider ref={sliderRef} {...settings} className="slide">
         {images.map((image, index) => (
-          <img key={index} src={image} alt={`Image${index + 1}`} />
+          <img key={index} src={image} alt='' />
         ))}
       </Slider>
     </div>

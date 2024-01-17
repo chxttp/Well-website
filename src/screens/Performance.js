@@ -2,8 +2,6 @@ import React, {useEffect} from "react";
 import Navbar from "../component/Navbar";
 import Banner from "../component/Banner";
 import Footer from "../component/Footer";
-import image2 from "../Images/image2.jpeg";
-import image3 from "../Images/image3.jpeg";
 import image5 from "../Images/image5.png";
 import performancebanter from "../Images/performancebanter.jpeg";
 import maemoh1 from "../Images/maemoh3.jpg";

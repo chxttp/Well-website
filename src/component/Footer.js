@@ -10,7 +10,6 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { FaTiktok } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -25,13 +24,13 @@ function Footer() {
             <a href="/aboutus">
               <p>About us</p>
             </a>
-            <a href="">
+            <a href="/service">
               <p>Service</p>
             </a>
-            <a href="">
+            <a href="/strength">
               <p>Key Strength</p>
             </a>
-            <a href="">
+            <a href="performance">
               <p>Performance</p>
             </a>
             <a href="/contact">
@@ -41,23 +40,39 @@ function Footer() {
           <div className="footer-link">
             <h4>Follow us here</h4>
             <div className="social-media">
-              <a href="https://www.facebook.com/profile.php?id=100070156996483" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/profile.php?id=100070156996483"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faFacebook} />
                 </p>
               </a>
-              <a href="https://www.tiktok.com/@wellengineering?fbclid=IwAR2mMggkMrrCXoLN8cOgGaESd2xvapGQtXTOhxP4S97dMwPLn4cMP1T_pYM" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.tiktok.com/@wellengineering?fbclid=IwAR2mMggkMrrCXoLN8cOgGaESd2xvapGQtXTOhxP4S97dMwPLn4cMP1T_pYM"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faTiktok} />
                 </p>
               </a>
 
-              <a href="https://www.instagram.com/wellengineering2019/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/wellengineering2019/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faInstagram} />
                 </p>
               </a>
-              <a href="https://twitter.com/well21022001?fbclid=IwAR2HiUAUZpTd2h-VbH-Jb8iZtIemfzjKZPnW-jYERv9uitwROsuVxBrFPV0" target="_blank" rel="noreferrer">
+              <a
+                href="https://twitter.com/well21022001?fbclid=IwAR2HiUAUZpTd2h-VbH-Jb8iZtIemfzjKZPnW-jYERv9uitwROsuVxBrFPV0"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faTwitter} />
                 </p>
@@ -68,22 +83,18 @@ function Footer() {
           <div className="footer-link">
             <h4>Contact</h4>
             <img src={logo2} alt="" className="contact-logo" />
-            <a href="">
-              <p>
-                <FontAwesomeIcon icon={faPhone} /> : (66) 0 2397 9324
-              </p>
-            </a>
-            <a href="">
-              <p>
-                <FontAwesomeIcon icon={faFax} /> : (66) 0 2397 9324
-              </p>
-            </a>
-            <a href="">
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} /> :
-                well@well-engineering.com
-              </p>
-            </a>
+
+            <p>
+              <FontAwesomeIcon icon={faPhone} /> : (66) 0 2397 9324
+            </p>
+
+            <p>
+              <FontAwesomeIcon icon={faFax} /> : (66) 0 2397 9324
+            </p>
+
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} /> : well@well-engineering.com
+            </p>
           </div>
         </div>
         <hr></hr>

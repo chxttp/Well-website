@@ -8,7 +8,7 @@ function StrengthPolicy() {
         <div className="key-strength-photo-container">
           <Parallax>
             <Fade left  duration={2000}>
-            <img src={strength2} alt="Key Strength Photo" />
+            <img src={strength2} alt="" />
 
             </Fade>
           </Parallax>

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Navbar from "../component/Navbar";
 import Banner from "../component/Banner";
 import Footer from "../component/Footer";
-import strength1 from "../Images/strength2.jpeg";
 import strength3 from "../Images/strength3.jpeg";
 import strength4 from "../Images/strength4.png";
 import strength5 from "../Images/strength5.png";

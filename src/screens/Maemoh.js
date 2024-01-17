@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Navbar from "../component/Navbar";
-import image5 from "../Images/image5.png";
 import maemohBanner from "../Images/maemohBanner.png";
 import "../styles/Maemoh.css";
 import Banner from "../component/Banner";

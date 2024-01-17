@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, Redirect, Navigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/PerformanceComponent.css";
 const PerformanceComponent = ({ imageSrc, title, text,path }) => {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ const PerformanceComponent = ({ imageSrc, title, text,path }) => {
       <div className="performance-component-title">
         <h2>{title}</h2>
       </div>
-      <img src={imageSrc} alt="Image description" />
+      <img src={imageSrc} alt="" />
       <div className="performance-component-text">
         <p>{text}</p>
       </div>

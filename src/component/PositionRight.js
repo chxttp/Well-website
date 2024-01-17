@@ -11,8 +11,8 @@ function PositionRight({ positionText, image1, image2, name, position }) {
         <div className="right-position-photo-container">
           <Parallax className="right-photo-parallax">
             <Fade left duration={2000}>
-              <img src={image1} alt="Image 1" />
-              <img src={image2} alt="Image 2" />
+              <img src={image1} alt="" />
+              <img src={image2} alt="" />
             </Fade>
           </Parallax>
         </div>

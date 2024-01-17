@@ -1,9 +1,8 @@
 // PerformanceList.js
 
 import React from "react";
-import { useNavigate, Redirect, Navigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/PerformanceList.css"; // Create a CSS file for styling
-import image1 from "../Images/image1.jpeg"; // Replace with your image imports
 import image2 from "../Images/image2.jpeg";
 import image3 from "../Images/image3.jpeg";
 import image4 from "../Images/image4.jpeg";
