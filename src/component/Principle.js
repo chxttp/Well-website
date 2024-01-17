@@ -1,6 +1,4 @@
-import red from '../Images/redPrinciple.jpeg'
 import white from '../Images/whitePrinciple.jpeg'
-import CertificateCard from '../component/CertificateCard';
 import PrincipleCard from '../component/PrincipleCard';
 import '../styles/Principle.css'
 

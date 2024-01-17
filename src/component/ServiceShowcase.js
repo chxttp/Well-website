@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/ServiceShowcase.css'
@@ -8,7 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import { EffectCoverflow, Pagination, Navigation, Autoplay  } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay  } from 'swiper/modules';
 import serviceMotor1 from "../Images/service-motor1.png";
 import serviceGenerator1 from "../Images/service-generator1.png"
 import serviceDry1 from "../Images/service-dry1.png"
@@ -48,19 +48,19 @@ const ServiceShowcase = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={serviceMotor1} />
+          <img src={serviceMotor1} alt=''/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceGenerator1} />
+          <img src={serviceGenerator1} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceDry1} />
+          <img src={serviceDry1} alt=''/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceOnsite1} />
+          <img src={serviceOnsite1} alt=''/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceOnsite2} />
+          <img src={serviceOnsite2} alt=''/>
         </SwiperSlide>
         
       </Swiper>
