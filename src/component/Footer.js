@@ -41,23 +41,23 @@ function Footer() {
           <div className="footer-link">
             <h4>Follow us here</h4>
             <div className="social-media">
-              <a href="https://www.facebook.com/profile.php?id=100070156996483" target="_blank">
+              <a href="https://www.facebook.com/profile.php?id=100070156996483" target="_blank" rel="noreferrer">
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faFacebook} />
                 </p>
               </a>
-              <a href="https://www.tiktok.com/@wellengineering?fbclid=IwAR2mMggkMrrCXoLN8cOgGaESd2xvapGQtXTOhxP4S97dMwPLn4cMP1T_pYM" target="_blank">
+              <a href="https://www.tiktok.com/@wellengineering?fbclid=IwAR2mMggkMrrCXoLN8cOgGaESd2xvapGQtXTOhxP4S97dMwPLn4cMP1T_pYM" target="_blank" rel="noreferrer">
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faTiktok} />
                 </p>
               </a>
 
-              <a href="https://www.instagram.com/wellengineering2019/" target="_blank">
+              <a href="https://www.instagram.com/wellengineering2019/" target="_blank" rel="noreferrer">
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faInstagram} />
                 </p>
               </a>
-              <a href="https://twitter.com/well21022001?fbclid=IwAR2HiUAUZpTd2h-VbH-Jb8iZtIemfzjKZPnW-jYERv9uitwROsuVxBrFPV0" target="_blank">
+              <a href="https://twitter.com/well21022001?fbclid=IwAR2HiUAUZpTd2h-VbH-Jb8iZtIemfzjKZPnW-jYERv9uitwROsuVxBrFPV0" target="_blank" rel="noreferrer">
                 <p className="icon-circle">
                   <FontAwesomeIcon icon={faTwitter} />
                 </p>
