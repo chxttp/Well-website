@@ -11,12 +11,15 @@ import image4 from "../Images/image4.jpeg";
 import image5 from "../Images/image5.png";
 import image6 from "../Images/image6.jpeg";
 import allCertificate from "../Images/all-certifiicate.png";
+// eslint-disable-next-line
+import VideoPlayer from "../component/VideoPlayer";
 import VideoSlider from "../component/VideoSlide";
 import ServiceShowcase from "../component/ServiceShowcase";
 import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   const homeBanter = [image3, image4, image5, image6];
+  
   useEffect(() => {
     window.scrollTo(0, 0);
     document.querySelector(".home-container").classList.add("fade-in");
@@ -25,7 +28,7 @@ function Home() {
   const handleShowMoreClick = () => {
     navigate("/certificate");
   };
-   
+  
 
 
   return (
@@ -48,7 +51,7 @@ function Home() {
         <Principle />
       </div>
       <div className="Video">
-        {/* <VideoPlayer videoSource={Video} width={"500px"} height={"500px"} /> */}
+        
         <VideoSlider />
       </div>
 
