@@ -1,6 +1,6 @@
 import "../styles/PositionLeft.css";
 import { Parallax } from "react-scroll-parallax";
-import { Fade } from "react-reveal";
+import { Fade } from 'react-awesome-reveal';
 function PositionLeft({ positionText, image1, image2, name, position }) {
   return (
     <div className="left-position-container">

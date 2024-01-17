@@ -1,6 +1,6 @@
 import '../styles/StrengthCertified.css'
 import { Parallax } from 'react-scroll-parallax';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 function StrengthCertified({ text1, text2, image1,image2 }) {
   return (
     <div className="strength-certified-container">

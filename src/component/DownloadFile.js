@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';;
 import '../styles/DownloadFile.css';
 import pdfUrl from '../PDF/Well-companyProfile.pdf'
 

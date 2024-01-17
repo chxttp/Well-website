@@ -1,6 +1,6 @@
 import strength2 from '../Images/strength2.jpeg'
 import { Parallax } from 'react-scroll-parallax';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import '../styles/StrengthPolicy.css'
 function StrengthPolicy() {
     return (
