@@ -5,12 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import videoPoster1 from '../Images/videoPoster1.jpg'
+import videoPoster2 from '../Images/videoPoster2.JPG'
 
-import video3 from "../videos/video3.mp4";
-import video4 from "../videos/video4.mp4"
+
+import video1 from '../videos/Video1.mp4'
+import video2 from '../videos/Video2.mp4'
 const VideoSlider = () => {
-  const videos = [video4, video3];
+  const videos = [video1, video2];
   const [playing, setPlaying] = useState(null);
+  const posters = [videoPoster1,videoPoster2];
 
   const settings = {
     infinite: true,
@@ -45,6 +49,7 @@ const VideoSlider = () => {
                 controls
                 loop
                 className="video"
+                poster={posters[index]}
                 onPlay={() => handlePlay(document.querySelector(`#video-${index}`))}
                 id={`video-${index}`}
                 

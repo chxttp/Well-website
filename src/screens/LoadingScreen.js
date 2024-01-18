@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/LoadingScreen.css'
-import loadingImg from '../Images/Newyear.jpg'
+import loadingImg from '../Images/loadingScreen.jpg'
 
 const LoadingScreen = () => {
   return (

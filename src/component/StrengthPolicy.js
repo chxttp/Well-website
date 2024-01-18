@@ -19,8 +19,8 @@ function StrengthPolicy() {
     return (
         <div className="key-strength-wrapper">
         <div className="key-strength-photo-container">
-          <Reveal keyframes={fadeInLeft} delay={300} duration={600} triggerOnce>
-          <img src={strength2} alt="" />
+          <Reveal keyframes={fadeInLeft} delay={300} duration={600} triggerOnce className='strength-reveal'>
+          <img src={strength2} alt=""  className='key-strength-image'/>
 
           </Reveal>
           

@@ -11,7 +11,7 @@ function Engineer() {
   return (
     <div className="Engineer-container">
       <div className="Engineer-title">
-        <h2>หนังสือแต่งตั้งวิศวกร</h2>
+        <h2>วิศวกรที่ปรึกษา</h2>
       </div>
       <div className="Engineer-img-container">
         <div className="Engineer-img-container-1">

@@ -7,6 +7,10 @@ import Footer from "../component/Footer";
 import PerformanceDetail from "../component/PerformanceDetail";
 import DownloadFile from "../component/DownloadFile";
 import PerformanceList from "../component/PerformanceList";
+import image1 from "../Images/image1.jpeg";
+import image2 from "../Images/image2.jpeg";
+import image3 from "../Images/image3.jpeg";
+import image4 from "../Images/image4.jpeg";
 function Maemoh() {
   const homeBanter = [maemohBanner];
   useEffect(() => {
@@ -24,7 +28,7 @@ function Maemoh() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-          <PerformanceDetail />
+          <PerformanceDetail title={'งานเหมืองเเม่เมาะ'} date={'วันที่ 9 ธ.ค. 2566'} image1={image1} image2={image2} image3={image3} image4={image4} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ametcommodo nulla facilisi nullam vehicula ipsum a arcu.'}/>
         </div> 
 
         <div className="Performance-list">

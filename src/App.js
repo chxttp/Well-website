@@ -10,6 +10,7 @@ import Performance from "./screens/Performance";
 import Maemoh from "./screens/Maemoh";
 import LoadingScreen from "./screens/LoadingScreen"; // Import your LoadingScreen component
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Prapa from "./screens/Prapa";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,6 +42,7 @@ function App() {
           <Route path="/strength" element={<KeyStrength />} />
           <Route path="/performance" element={<Performance />} />
           <Route path="/เหมืองเเม่เมาะ" element={<Maemoh />} />
+          <Route path="/การประปา" element={<Prapa/>} />
         </Routes>
       )}
     </Router>

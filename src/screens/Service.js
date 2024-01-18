@@ -12,10 +12,10 @@ import serviceGenerator1 from "../Images/service-generator1.png"
 import serviceGenerator2 from "../Images/service-generator2.png"
 import serviceDry1 from "../Images/service-dry1.png"
 import serviceDry2 from "../Images/service-dry2.jpeg"
-import serviceOnsite1 from "../Images/service-onsite1.png"
-import serviceOnsite2 from "../Images/service-onsite2.png"
-import serviceOnsite3 from "../Images/service-onsite3.png"
-import serviceOnsite4 from "../Images/service-onsite4.png"
+import serviceOnsite1 from "../Images/service-onsite1.jpg"
+import serviceOnsite2 from "../Images/service-onsite2.jpg"
+import serviceOnsite3 from "../Images/service-onsite3.jpg"
+import serviceOnsite4 from "../Images/service-onsite4.jpg"
 
 
 function Service() {

@@ -9,12 +9,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { EffectCoverflow, Pagination, Autoplay  } from 'swiper/modules';
-import serviceMotor1 from "../Images/service-motor1.png";
-import serviceGenerator1 from "../Images/service-generator1.png"
-import serviceDry1 from "../Images/service-dry1.png"
-import serviceOnsite1 from "../Images/service-onsite1.png"
-import serviceOnsite2 from "../Images/service-onsite2.png"
-
+// import serviceMotor1 from "../Images/service-motor1.png";
+// import serviceGenerator1 from "../Images/service-generator1.png"
+// import serviceDry1 from "../Images/service-dry1.png"
+import serviceOnsite1 from "../Images/service-onsite1.jpg"
+import serviceOnsite2 from "../Images/service-onsite2.jpg"
+import showcase1 from '../Images/showcase1.jpg'
+import showcase2 from '../Images/showcase2.jpg'
+import showcase3 from '../Images/showcase3.jpg'
+import showcase4 from '../Images/showcase4.jpg'
+import showcase5 from '../Images/showcase5.jpg'
+import showcase6 from '../Images/showcase6.jpg'
+import showcase7 from '../Images/showcase7.jpg'
 
 
 const ServiceShowcase = () => {
@@ -48,13 +54,25 @@ const ServiceShowcase = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={serviceMotor1} alt=''/>
+          <img src={showcase1} alt=''/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceGenerator1} alt='' />
+          <img src={showcase2} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={serviceDry1} alt=''/>
+          <img src={showcase3} alt=''/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={showcase4} alt=''/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={showcase5} alt=''/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={showcase6} alt=''/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={showcase7} alt=''/>
         </SwiperSlide>
         <SwiperSlide>
           <img src={serviceOnsite1} alt=''/>
