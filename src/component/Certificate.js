@@ -11,12 +11,12 @@ import image6 from "../Images/Certificate6.jpg"
 
 function Certificate() {
   const certificateData = [
-    { imageUrl: image1, cardTitle: "Certificate", cardName: "Certificate Detail 1" },
-    { imageUrl: image2, cardTitle: "Certificate", cardName: "Certificate Detail 2" },
-    { imageUrl: image3, cardTitle: "Certificate", cardName: "Certificate Detail 3" },
-    { imageUrl: image4, cardTitle: "Certificate", cardName: "Certificate Detail 4" },
-    { imageUrl: image5, cardTitle: "Certificate", cardName: "Certificate Detail 5" },
-    { imageUrl: image6, cardTitle: "Certificate", cardName: "Certificate Detail 6" },
+    { imageUrl: image1, cardTitle: "CERTIFICATE 1", cardName: "ISO 14001:2015" },
+    { imageUrl: image2, cardTitle: "CERTIFICATE 2", cardName: "ISO 45001:2018" },
+    { imageUrl: image3, cardTitle: "CERTIFICATE 3", cardName: "THAI SME-GP" },
+    { imageUrl: image4, cardTitle: "CERTIFICATE 4", cardName: "ISO 9001:2015" },
+    { imageUrl: image5, cardTitle: "CERTIFICATE 5", cardName: "GREEN INDUSTRY LEVEL : 3" },
+    { imageUrl: image6, cardTitle: "CERTIFICATE 6", cardName: "EASA MEMBER 2023-2024" },
   ];
   return (
     <div className="Certificate-container">

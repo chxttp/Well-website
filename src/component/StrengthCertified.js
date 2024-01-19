@@ -26,11 +26,11 @@ function StrengthCertified({ text1, text2, image1,image2 }) {
           <div className="strength-certified-image">
             <img src={image1} alt="" />
           </div>
-          <div className="strength-certified-text-container">
+          {/* <div className="strength-certified-text-container">
             <div className="strength-certified-text">
               <p>{text1}</p>
             </div>
-          </div>
+          </div> */}
 
           </Reveal>
 
@@ -47,11 +47,11 @@ function StrengthCertified({ text1, text2, image1,image2 }) {
           <div className="strength-certified-image">
             <img src={image2} alt="" />
           </div>
-          <div className="strength-certified-text-container">
+          {/* <div className="strength-certified-text-container">
             <div className="strength-certified-text">
               <p>{text2}</p>
             </div>
-          </div>
+          </div> */}
 
           </Reveal>
           

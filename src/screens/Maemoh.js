@@ -7,10 +7,14 @@ import Footer from "../component/Footer";
 import PerformanceDetail from "../component/PerformanceDetail";
 import DownloadFile from "../component/DownloadFile";
 import PerformanceList from "../component/PerformanceList";
-import image1 from "../Images/image1.jpeg";
-import image2 from "../Images/image2.jpeg";
-import image3 from "../Images/image3.jpeg";
-import image4 from "../Images/image4.jpeg";
+import maemoh1 from '../Images/maemoh1.jpg'
+import maemoh2 from '../Images/maemoh2.jpg'
+import maemoh3 from '../Images/maemoh4.jpg'
+import maemoh4 from '../Images/maemoh5.jpg'
+import maemoh5 from '../Images/maemoh6.jpg'
+import maemoh6 from '../Images/maemoh7.jpg'
+import maemoh7 from '../Images/maemoh8.jpg'
+import maemoh8 from '../Images/maemoh9.jpg'
 function Maemoh() {
   const homeBanter = [maemohBanner];
   useEffect(() => {
@@ -28,7 +32,7 @@ function Maemoh() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-          <PerformanceDetail title={'งานเหมืองเเม่เมาะ'} date={'วันที่ 9 ธ.ค. 2566'} image1={image1} image2={image2} image3={image3} image4={image4} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ametcommodo nulla facilisi nullam vehicula ipsum a arcu.'}/>
+          <PerformanceDetail title={'งานเหมืองเเม่เมาะ'} date={'Date : 28 Nov 2023'} image1={maemoh1} image2={maemoh2} image3={maemoh3} image4={maemoh4} image5={maemoh5} image6={maemoh6} image7={maemoh7} image8={maemoh8} text={'Preventive Maintenance (PM) AC MOTOR SLIP RING 1000kW. เหมืองแม่เมาะ จ.ลำปาง เหมืองแร่ถ่านหินลิกไนต์ ที่ใหญ่ที่สุดในประเทศไทย'}/>
         </div> 
 
         <div className="Performance-list">

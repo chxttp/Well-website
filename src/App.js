@@ -8,9 +8,11 @@ import CertificatePage from "./screens/CertificatePage";
 import KeyStrength from "./screens/KeyStrength";
 import Performance from "./screens/Performance";
 import Maemoh from "./screens/Maemoh";
+
 import LoadingScreen from "./screens/LoadingScreen"; // Import your LoadingScreen component
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Prapa from "./screens/Prapa";
+import Hongsa from '../src/screens/Hongsa'
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -43,6 +45,7 @@ function App() {
           <Route path="/performance" element={<Performance />} />
           <Route path="/เหมืองเเม่เมาะ" element={<Maemoh />} />
           <Route path="/การประปา" element={<Prapa/>} />
+          <Route path="/โรงไฟฟ้าหงสา" element={<Hongsa/>} />
         </Routes>
       )}
     </Router>

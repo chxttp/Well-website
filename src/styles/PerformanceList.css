@@ -1,108 +1,116 @@
 /* PerformanceList.css */
 @import url('../styles/fonts.css');
+
 .performance-list-container {
-    width: 300px; /* Adjust the width as needed */
-    margin: 20px;
-    border: 1px solid #ddd; /* Add border for styling */
-    /* border-radius: 8px; */
-    padding: 6%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    
-   
-    
-    
-    
+  width: 300px;
+  /* Adjust the width as needed */
+  margin: 20px;
+  border: 1px solid #ddd;
+  /* Add border for styling */
+  /* border-radius: 8px; */
+  padding: 6%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+}
+
+.performance-list-header {
+  text-align: center;
+  margin-bottom: 20%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.performance-list-header h2 {
+  width: fit-content;
+  font-family: 'Sukhumvit', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid black;
+
+}
+
+
+.performance-list-items {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+
+
+
+}
+
+.performance-list-item {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 20%;
+  padding: 3%;
+
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.performance-list-item img {
+  width: 100px;
+  /* Adjust the image width as needed */
+  height: 80px;
+  /* Adjust the image height as needed */
+  border-radius: 8px;
+  margin-right: 5%;
+}
+
+.performance-list-item-details {
+  flex: 1;
+
+}
+
+.performance-list-item-details h3 {
+  font-family: 'Sukhumvit', sans-serif;
+  cursor: pointer;
+  padding: 6%;
+  font-size: 15px;
+
+
+}
+
+.performance-list-item-details p {
+  font-family: 'Sukhumvit', sans-serif;
+  margin: 5px 0;
+}
+
+.performance-list-item-details h3:hover {
+  color: #831522;
+  transition: 0.5s;
+}
+
+.performance-list-header h2 {
+  font-family: 'Sukhumvit', sans-serif;
+  text-align: center;
+
+  /* color: #831522; */
+
+}
+
+@media (max-width: 750px) {
+  .performance-list-container {
+    width: 400px;
+
+
+
   }
-  
-  .performance-list-header {
-    
-   text-align: center;
-    margin-bottom: 20%;
-    padding: 2%;
-   
-   
-  }
-  .performance-list-header h2{
+
+  .performance-list-header h2 {
     font-family: 'Sukhumvit', sans-serif;
-   text-align: center;
-   font-size: 24px;
-   
+    text-align: center;
+    font-size: 23px;
+
     /* color: #831522; */
 
   }
 
-
-  .performance-list-items {
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    
-    
-  
-  }
-  
-  .performance-list-item {
-    cursor: pointer;
-    display: flex;
-    margin-bottom: 20%;
-    padding: 3%;
-   
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  .performance-list-item img {
-    width: 100px; /* Adjust the image width as needed */
-    height: 80px; /* Adjust the image height as needed */
-    border-radius: 8px;
-    margin-right: 5%;
-  }
-  
-  .performance-list-item-details {
-    flex: 1;
-    
-  }
-  
-  .performance-list-item-details h3 {
-    font-family: 'Sukhumvit', sans-serif;
-    cursor: pointer;
-    padding: 6%;
-    font-size: 15px;
-   
-   
-  }
-  
-  .performance-list-item-details p {
-    font-family: 'Sukhumvit', sans-serif;
-    margin: 5px 0;
-  }
-  .performance-list-item-details h3:hover{
-    color: #831522;
-    transition: 0.5s;
-  }
-  .performance-list-header h2{
-    font-family: 'Sukhumvit', sans-serif;
-   text-align: center;
-   
-    /* color: #831522; */
-
-  }
-  @media (max-width: 750px) {
-    .performance-list-container {
-        width: 400px; 
-        
-        
-      
-      }
-      .performance-list-header h2{
-        font-family: 'Sukhumvit', sans-serif;
-       text-align: center;
-       font-size: 23px;
-       
-        /* color: #831522; */
-    
-      }
-    
-  }
+}

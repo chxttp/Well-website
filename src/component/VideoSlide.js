@@ -6,15 +6,30 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import videoPoster1 from '../Images/videoPoster1.jpg'
-import videoPoster2 from '../Images/videoPoster2.JPG'
+import videoPoster2 from '../Images/videoPoster3.jpg'
+import videoPoster3 from '../Images/videoPoster4.jpg'
+import videoPoster4 from '../Images/videoPoster5.jpg'
+import videoPoster5 from '../Images/videoPoster6.jpg'
+import videoPoster6 from '../Images/videoPoster7.jpg'
+import videoPoster7 from '../Images/videoPoster8.jpg'
+import videoPoster8 from '../Images/videoPoster9.jpg'
 
 
 import video1 from '../videos/Video1.mp4'
-import video2 from '../videos/Video2.mp4'
+// import video2 from '../videos/Video2.mp4'
+import video3 from '../videos/Video6.mp4'
+import video4 from '../videos/Video7.mp4'
+import video5 from '../videos/Video8.mp4'
+import video6 from '../videos/Video9.mp4'
+import video7 from '../videos/Video10.mp4'
+import video8 from '../videos/Video11.mp4'
+import video9 from '../videos/Video12.mp4'
+
+
 const VideoSlider = () => {
-  const videos = [video1, video2];
+  const videos = [video1, video3, video4, video5, video6, video7, video8, video9];
   const [playing, setPlaying] = useState(null);
-  const posters = [videoPoster1,videoPoster2];
+  const posters = [videoPoster1,videoPoster2, videoPoster3, videoPoster4, videoPoster5, videoPoster6, videoPoster7, videoPoster8];
 
   const settings = {
     infinite: true,

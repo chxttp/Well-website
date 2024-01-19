@@ -15,7 +15,7 @@ function CertificateCard({ imageUrl, cardName, isMiddleCard, cardTitle }) {
         </div>
 
         <div className="card-details">
-          <h2 className="card-title">{cardTitle}</h2>
+          {/* <h2 className="card-title">{cardTitle}</h2> */}
           <p className="card-description">
            {cardName}
           </p>

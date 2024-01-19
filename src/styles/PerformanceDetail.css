@@ -37,12 +37,14 @@
     box-sizing: border-box;
     padding: 2%; /* Add some padding for spacing */
     
+    
   }
   
   .performance-detail-image-wrapper img {
     width: 100%;
     height: auto;
     display: block;
+   
     border-radius: 2px; /* Optional: Add border radius for rounded corners */
   }
   

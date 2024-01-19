@@ -6,11 +6,16 @@ import Footer from "../component/Footer";
 import PerformanceDetail from "../component/PerformanceDetail";
 import DownloadFile from "../component/DownloadFile";
 import PerformanceList from "../component/PerformanceList";
-import image1 from "../Images/image1.jpeg";
-import image2 from "../Images/image2.jpeg";
-import image3 from "../Images/image3.jpeg";
-import image4 from "../Images/image4.jpeg";
 import prapa2 from '../Images/prapa2.jpg'
+import prapa3 from '../Images/prapa3.jpg'
+import prapa4 from '../Images/prapa4.jpg'
+import prapa6 from '../Images/prapa6.jpg'
+import prapa7 from '../Images/prapa7.jpg'
+import prapa8 from '../Images/prapa8.jpg'
+import prapa9 from '../Images/prapa9.jpg'
+import prapa10 from '../Images/prapa10.jpg'
+import prapa11 from '../Images/prapa11.jpg'
+
 function Prapa() {
   const homeBanter = [prapa2];
   useEffect(() => {
@@ -28,7 +33,7 @@ function Prapa() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-        <PerformanceDetail title={'การประปาส่วนภูมิภาค (ส่วนกลาง)'} date={'วันที่ 10 ธ.ค. 2566'} image1={image1} image2={image2} image3={image3} image4={image4} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ametcommodo nulla facilisi nullam vehicula ipsum a arcu.'}/>
+        <PerformanceDetail title={'การประปาส่วนภูมิภาค (ส่วนกลาง)'} date={'Date : 17 Nov 2023'} image1={prapa3} image2={prapa4} image3={prapa6} image4={prapa7} image5={prapa8} image6={prapa9} image7={prapa10} image8={prapa11}  text={'บริษัท เวลเอ็นจิเนียริ่งเซอร์วิส จำกัด ยินดีต้อนร้บ การประปาส่วนภูมิภาค ฝ่ายควบคุมคุณภาพกองบำรุงรักษาและพลังงาน ฝ่ายวิศวกรรมกองออกแบบวิศวกรรม กองประมาณราคา ได้เข้าเยี่ยมชมโรงงานในครั้งนี้'}/>
         </div> 
 
         <div className="Performance-list">
