@@ -15,8 +15,9 @@ import prapa8 from '../Images/prapa8.jpg'
 import prapa9 from '../Images/prapa9.jpg'
 import prapa10 from '../Images/prapa10.jpg'
 import prapa11 from '../Images/prapa11.jpg'
-
+import locales from "../data/locales";
 function Prapa() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const homeBanter = [prapa2];
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,7 +34,7 @@ function Prapa() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-        <PerformanceDetail title={'การประปาส่วนภูมิภาค (ส่วนกลาง)'} date={'Date : 17 Nov 2023'} image1={prapa3} image2={prapa4} image3={prapa6} image4={prapa7} image5={prapa8} image6={prapa9} image7={prapa10} image8={prapa11}  text={'บริษัท เวลเอ็นจิเนียริ่งเซอร์วิส จำกัด ยินดีต้อนร้บ การประปาส่วนภูมิภาค ฝ่ายควบคุมคุณภาพกองบำรุงรักษาและพลังงาน ฝ่ายวิศวกรรมกองออกแบบวิศวกรรม กองประมาณราคา ได้เข้าเยี่ยมชมโรงงานในครั้งนี้'}/>
+        <PerformanceDetail title={locales[currentLanguage].performance2Title} date={'Date : 17 Nov 2023'} image1={prapa3} image2={prapa4} image3={prapa6} image4={prapa7} image5={prapa8} image6={prapa9} image7={prapa10} image8={prapa11}  text={locales[currentLanguage].performance2Text}/>
         </div> 
 
         <div className="Performance-list">

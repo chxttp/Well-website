@@ -7,9 +7,11 @@ import performancebanter from "../Images/performancebanter.jpeg";
 import maemoh1 from "../Images/maemoh3.jpg";
 import hongsa1 from '../Images/hongsa1.jpg'
 import DownloadFile from "../component/DownloadFile";
+import locales from "../data/locales";
 import "../styles/Performance.css";
 import PerformanceComponent from "../component/PerformanceComponent";
 function Performance() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
     useEffect(() => {
         window.scrollTo(0, 0);
         document.querySelector(".Performance-container").classList.add("fade-in");
@@ -28,27 +30,27 @@ function Performance() {
       <div className="Performance-detail">
         <PerformanceComponent
           imageSrc={maemoh1}
-          title={"เหมืองเเม่เมาะ"}
+          title={locales[currentLanguage].performance1Title}
           text={
-            "Preventive Maintenance (PM) AC MOTOR SLIP RING 1000kW. เหมืองแม่เมาะ จ.ลำปาง เหมืองแร่ถ่านหินลิกไนต์ ที่ใหญ่ที่สุดในประเทศไทย"
+            locales[currentLanguage].performance1Text
           }
-          path={"/เหมืองเเม่เมาะ"}
+          path={`/${localStorage.getItem('defaultLanguage')}/เหมืองเเม่เมาะ`}
         />
         <PerformanceComponent
           imageSrc={prapa1}
-          title={"การประปาส่วนภูมิภาค (ส่วนกลาง)"}
+          title={locales[currentLanguage].performance2Title}
           text={
-            "บริษัท เวลเอ็นจิเนียริ่งเซอร์วิส จำกัด ยินดีต้อนร้บ การประปาส่วนภูมิภาค ฝ่ายควบคุมคุณภาพกองบำรุงรักษาและพลังงาน ฝ่ายวิศวกรรมกองออกแบบวิศวกรรม กองประมาณราคา ได้เข้าเยี่ยมชมโรงงานในครั้งนี้"
+            locales[currentLanguage].performance2Text
           }
-          path={"/การประปา"}
+          path={`/${localStorage.getItem('defaultLanguage')}/การประปา`}
         />
         <PerformanceComponent
           imageSrc={hongsa1}
-          title={"โรงไฟฟ้าหงสา (สปป.ลาว)"}
+          title={locales[currentLanguage].performance3Title}
           text={
-            "👷‍♂️ Inspection and Overhaul มอเตอร์ไฟฟ้า AC/DC เหมืองแร่ถ่านหินลิกไนต์ ที่ใหญ่ที่สุดใน สปป.ลาว เมืองหงสา จังหวัดไซยาบูลี"
+            locales[currentLanguage].performance3Text
           }
-          path={"/โรงไฟฟ้าหงสา"}
+          path={`/${localStorage.getItem('defaultLanguage')}/โรงไฟฟ้าหงสา`}
         />
       </div>
       <div className="download-section">

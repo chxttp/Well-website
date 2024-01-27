@@ -24,9 +24,11 @@ import video6 from '../videos/Video9.mp4'
 import video7 from '../videos/Video10.mp4'
 import video8 from '../videos/Video11.mp4'
 import video9 from '../videos/Video12.mp4'
+import locales from "../data/locales";
 
 
 const VideoSlider = () => {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const videos = [video1, video3, video4, video5, video6, video7, video8, video9];
   const [playing, setPlaying] = useState(null);
   const posters = [videoPoster1,videoPoster2, videoPoster3, videoPoster4, videoPoster5, videoPoster6, videoPoster7, videoPoster8];
@@ -54,7 +56,7 @@ const VideoSlider = () => {
   return (
     <div className="video-container">
       <div className="video-text">
-        <h3>VIDEO</h3>
+        <h3>{locales[currentLanguage].videoText}</h3>
       </div>
       <div className="slider-container">
         <Slider {...settings}>

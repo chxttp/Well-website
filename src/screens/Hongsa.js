@@ -15,7 +15,9 @@ import hongsa5 from '../Images/hongsa6.jpg'
 import hongsa6 from '../Images/hongsa7.jpg'
 import hongsa7 from '../Images/hongsa8.jpg'
 import hongsa8 from '../Images/hongsa9.jpg'
+import locales from "../data/locales";
 function Maemoh() {
+    const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const homeBanter = [hongsaBanner];
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,7 +34,7 @@ function Maemoh() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-          <PerformanceDetail title={'โรงไฟฟ้าหงสา (สปป.ลาว)'} date={'Date : 28 Oct 2023'} image1={hongsa1} image2={hongsa2} image3={hongsa3} image4={hongsa4} image5={hongsa5} image6={hongsa6} image7={hongsa7} image8={hongsa8} text={'👷‍♂️ Inspection and Overhaul มอเตอร์ไฟฟ้า AC/DC เหมืองแร่ถ่านหินลิกไนต์ ที่ใหญ่ที่สุดใน สปป.ลาว เมืองหงสา จังหวัดไซยาบูลี'}/>
+          <PerformanceDetail title={locales[currentLanguage].performance3Title} date={'Date : 28 Oct 2023'} image1={hongsa1} image2={hongsa2} image3={hongsa3} image4={hongsa4} image5={hongsa5} image6={hongsa6} image7={hongsa7} image8={hongsa8} text={locales[currentLanguage].performance3Text}/>
         </div> 
 
         <div className="Performance-list">

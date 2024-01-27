@@ -16,9 +16,11 @@ import serviceOnsite1 from "../Images/service-onsite1.jpg"
 import serviceOnsite2 from "../Images/service-onsite2.jpg"
 import serviceOnsite3 from "../Images/service-onsite3.jpg"
 import serviceOnsite4 from "../Images/service-onsite4.jpg"
+import locales from "../data/locales";
 
 
 function Service() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
     const homeBanter = [servicebanter];
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -33,10 +35,10 @@ function Service() {
         <Banner images={homeBanter} />
       </div>
       <div className="Service-detail">
-        <ServiceContent topic={"MOTOR"} imageLeft={serviceMotor1} imageRight={serviceMotor2} topic2={"Repair & Maintenance Motor"}text={"บริษัท เวลเอ็นจีเนียริ่งเซอร์วิส จำกัด เป็นศูนย์บริการซ่อมและบำรุงรักษามอเตอร์ไฟฟ้าอุตสาหกรรมทุกชนิด ทั้ง AC Motor, DC Motor และ MV Motor รวมถึงอุปกรณ์ที่เกี่ยวข้องกับมอเตอร์ เช่น เกียร์ ปั๊มน้ำ เครื่องเป่าลม (blower) เครื่องกำเนิดไฟฟ้า (generator) และ หม้อแปลงไฟฟ้า (Dry type transformer)  โดยมีลูกค้าหลักเป็นกลุ่มโรงงานอุตสาหกรรมทั่วไป อาทิ อุตสาหกรรมเหล็ก อุตสาหกรรมปูน อุตสาหกรรมกระดาษ อุตสาหกรรมน้ำตาล โรงไฟฟ้า อุตสาหกรรมปิโตรเคมี และ อุตสาหกรรมผลิตอาหาร เป็นต้น ซึ่งใช้มอเตอร์ไฟฟ้าเป็นจำนวนมาก "} />
-        <ServiceContent topic={"GENERATOR"} imageLeft={serviceGenerator1} imageRight={serviceGenerator2} topic2={"Repair & Maintenance Geneator"}text={"บริษัท เวลเอ็นจีเนียริ่งเซอร์วิส จำกัด เป็นศูนย์บริการซ่อมและบำรุงรักษามอเตอร์ไฟฟ้าอุตสาหกรรมทุกชนิด ทั้ง AC Motor, DC Motor และ MV Motor รวมถึงอุปกรณ์ที่เกี่ยวข้องกับมอเตอร์ เช่น เกียร์ ปั๊มน้ำ เครื่องเป่าลม (blower) เครื่องกำเนิดไฟฟ้า (generator) และ หม้อแปลงไฟฟ้า (Dry type transformer)  โดยมีลูกค้าหลักเป็นกลุ่มโรงงานอุตสาหกรรมทั่วไป อาทิ อุตสาหกรรมเหล็ก อุตสาหกรรมปูน อุตสาหกรรมกระดาษ อุตสาหกรรมน้ำตาล โรงไฟฟ้า อุตสาหกรรมปิโตรเคมี และ อุตสาหกรรมผลิตอาหาร เป็นต้น ซึ่งใช้มอเตอร์ไฟฟ้าเป็นจำนวนมาก "}/>
-        <ServiceContent topic={"DRY TYPE TRANSFORMER"} imageLeft={serviceDry1} imageRight={serviceDry2} topic2={"Repair & Maintenance Dry Type Transformer"}text={"บริษัท เวลเอ็นจีเนียริ่งเซอร์วิส จำกัด เป็นศูนย์บริการซ่อมและบำรุงรักษามอเตอร์ไฟฟ้าอุตสาหกรรมทุกชนิด ทั้ง AC Motor, DC Motor และ MV Motor รวมถึงอุปกรณ์ที่เกี่ยวข้องกับมอเตอร์ เช่น เกียร์ ปั๊มน้ำ เครื่องเป่าลม (blower) เครื่องกำเนิดไฟฟ้า (generator) และ หม้อแปลงไฟฟ้า (Dry type transformer)  โดยมีลูกค้าหลักเป็นกลุ่มโรงงานอุตสาหกรรมทั่วไป อาทิ อุตสาหกรรมเหล็ก อุตสาหกรรมปูน อุตสาหกรรมกระดาษ อุตสาหกรรมน้ำตาล โรงไฟฟ้า อุตสาหกรรมปิโตรเคมี และ อุตสาหกรรมผลิตอาหาร เป็นต้น ซึ่งใช้มอเตอร์ไฟฟ้าเป็นจำนวนมาก "}/>
-        <ServiceContent topic={"ONSITE SERVICE"} imageLeft={serviceOnsite1} imageRight={serviceOnsite2} image3={serviceOnsite3} image4={serviceOnsite4} topic2={"Onsite Repair & Maintenance Service"}text={"บริษัท เวลเอ็นจีเนียริ่งเซอร์วิส จำกัด เป็นศูนย์บริการซ่อมและบำรุงรักษามอเตอร์ไฟฟ้าอุตสาหกรรมทุกชนิด ทั้ง AC Motor, DC Motor และ MV Motor รวมถึงอุปกรณ์ที่เกี่ยวข้องกับมอเตอร์ เช่น เกียร์ ปั๊มน้ำ เครื่องเป่าลม (blower) เครื่องกำเนิดไฟฟ้า (generator) และ หม้อแปลงไฟฟ้า (Dry type transformer)  โดยมีลูกค้าหลักเป็นกลุ่มโรงงานอุตสาหกรรมทั่วไป อาทิ อุตสาหกรรมเหล็ก อุตสาหกรรมปูน อุตสาหกรรมกระดาษ อุตสาหกรรมน้ำตาล โรงไฟฟ้า อุตสาหกรรมปิโตรเคมี และ อุตสาหกรรมผลิตอาหาร เป็นต้น ซึ่งใช้มอเตอร์ไฟฟ้าเป็นจำนวนมาก "}/>
+        <ServiceContent topic={locales[currentLanguage].motorTopic} imageLeft={serviceMotor1} imageRight={serviceMotor2} topic2={"Repair & Maintenance Motor"}text={locales[currentLanguage].motorText} />
+        <ServiceContent topic={locales[currentLanguage].generatorTopic} imageLeft={serviceGenerator1} imageRight={serviceGenerator2} topic2={"Repair & Maintenance Geneator"}text={locales[currentLanguage].generatorText}/>
+        <ServiceContent topic={locales[currentLanguage].transformerTopic} imageLeft={serviceDry1} imageRight={serviceDry2} topic2={"Repair & Maintenance Dry Type Transformer"}text={locales[currentLanguage].transformerText}/>
+        <ServiceContent topic={locales[currentLanguage].onsiteTopic} imageLeft={serviceOnsite1} imageRight={serviceOnsite2} image3={serviceOnsite3} image4={serviceOnsite4} topic2={"Onsite Repair & Maintenance Service"}text={locales[currentLanguage].onsiteText}/>
         
       </div>
       <div className="download-section">

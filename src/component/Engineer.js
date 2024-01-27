@@ -7,11 +7,13 @@ import Engineer2 from "../Images/enginner2.jpg";
 // import Engineer4 from "../Images/engineer4.jpg";
 import Engineer5 from "../Images/engineer5.jpg";
 import Engineer6 from "../Images/engineer6.jpg";
+import locales from "../data/locales";
 function Engineer() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   return (
     <div className="Engineer-container">
       <div className="Engineer-title">
-        <h2>วิศวกรที่ปรึกษา</h2>
+        <h2>{locales[currentLanguage].engineerText}</h2>
       </div>
       <div className="Engineer-img-container">
         <div className="Engineer-img-container-1">

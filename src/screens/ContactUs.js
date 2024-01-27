@@ -7,8 +7,10 @@ import contactUsBg from "../Images/contactBanter.jpeg";
 import DownloadFile from "../component/DownloadFile";
 import Map from "../Images/map.jpeg"
 import "../styles/ContactUs.css";
+import locales from "../data/locales";
 
 function ContactUs() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const [messageSent, setMessageSent] = useState(false);
   const {
     register,
@@ -40,7 +42,7 @@ function ContactUs() {
       <div className="Contact-text">
         <div className="Contact-form">
             <div className="Contact-form-text">
-            <h2>CONTACT FORM</h2>
+            <h2>{locales[currentLanguage].contactTopic}</h2>
 
             </div>
          

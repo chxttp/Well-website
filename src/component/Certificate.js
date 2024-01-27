@@ -6,10 +6,10 @@ import image3 from "../Images/Certificate3.JPG";
 import image4 from "../Images/Certificate4.JPG";
 import image5 from "../Images/Certificate5.JPG";
 import image6 from "../Images/Certificate6.jpg"
-// import image7 from "../Images/Certificate7.jpg";
-// import image8 from "../Images/Certificate8.jpg";
+import locales from "../data/locales";
 
 function Certificate() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; 
   const certificateData = [
     { imageUrl: image1, cardTitle: "CERTIFICATE 1", cardName: "ISO 14001:2015" },
     { imageUrl: image2, cardTitle: "CERTIFICATE 2", cardName: "ISO 45001:2018" },
@@ -21,18 +21,12 @@ function Certificate() {
   return (
     <div className="Certificate-container">
       <div className="Certificate-text">
-        <h3>CERTIFICATE</h3>
+        <h3>{locales[currentLanguage].certificateText}</h3>
       </div>
       <div className="Certificate-card">
         {certificateData.map((data, index) => (
            <CertificateCard key={index} imageUrl={data.imageUrl} cardTitle={data.cardTitle} cardName={data.cardName} />
-        ))}
-
-      {/* <CertificateCard imageUrl={image7} isMiddleCard={true} />
-      <CertificateCard imageUrl={image8} isMiddleCard={true} /> */}
-      {/* <CertificateCard imageUrl={image8} isMiddleCard={true} /> */}
-
-        
+        ))}      
       </div>
     </div>
   );

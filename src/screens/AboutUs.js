@@ -19,12 +19,14 @@ import "../styles/aboutUs.css";
 import PositionLeft from "../component/PostitionLeft";
 import PositionRight from "../component/PositionRight";
 import Engineer from "../component/Engineer";
+import locales from "../data/locales";
 function AboutUs() {
   const homeBanter = [image1];
   useEffect(() => {
     window.scrollTo(0, 0);
     document.querySelector(".aboutUs-container").classList.add("fade-in");
   }, []);
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   return (
     <div className="aboutUs-container">
       <div className="NavBar">
@@ -34,7 +36,7 @@ function AboutUs() {
         <Banner images={homeBanter} />
       </div>
       <div className="aboutUs-title">
-        <h2>OUR HISTORY</h2>
+        <h2>{locales[currentLanguage].aboutUsTitle}</h2>
       </div>
 
       <div className="AboutUsContent">
@@ -42,37 +44,37 @@ function AboutUs() {
           image1={aboutUs3}
           image2={aboutUs4}
           text={
-            "   บริษัท เวลเอ็นจิเนียริ่งเซอร์วิส จำกัด ก่อตั้งขึ้นเมื่อวันที่ 21 กุมภาพันธ์ พ.ศ. 2544 เราคือผู้ให้บริการซ่อมและบำรุงรักษามอเตอร์ไฟฟ้าทุกชนิด รวมถึงเครื่องกำเนิดไฟฟ้า ปั๊มน้ำ และโบลเวอร์ ด้วยความทุ่มเทและใส่ใจในการให้บริการ อีกทั้งการรักษาคุณภาพมาตรฐานที่ดีและตรงต่อเวลา จึงทำให้ได้รับความไว้วางใจจากลูกค้ามากขึ้น ส่งผลให้บริษัทมีการเติบโตขึ้นอย่างรวดเร็ว และได้ขยายโรงงานจากพื้นที่เดิมซึ่งเป็นโกดังขนาด 3 คูหา ไปสร้างเป็นโรงงานของตนเองบนพื้นที่ขนาด 4 ไร่ เพื่อรองรับปริมาณงานที่มากขึ้น และรองรับจำนวนพนักงานที่มากขึ้นด้วย เพื่อให้เพียงพอต่อการให้บริการลูกค้าได้อย่างรวดเร็วและมีคุณภาพ ปัจจุบัน บริษัทฯ มีพนักงานที่ประกอบไปด้วย วิศวกรไฟฟ้า วิศวกรเครื่องกล ผู้ชำนาญงาน ช่างเทคนิค ผู้ช่วยช่าง ไปจนถึงแรงงาน ที่ล้วนแล้วแต่มีประสบการณ์ในการทำงาน และได้รับการฝึกอบรมมาอย่างดีเยี่ยม เพื่อให้มีความรู้ความชำนาญ และมีความพร้อมที่จะให้บริการงานซ่อมอย่างมีคุณภาพตามเกณฑ์มาตรฐานของทางบริษัท ทั้งนี้ สิ่งที่บริษัทยังคงทำมาอย่างต่อเนื่องและสม่ำเสมอก็คือ การพัฒนาการทำงานให้มีประสิทธิภาพเพิ่มขึ้นอยู่เสมอ และให้ความสำคัญในเรื่องของการลงทุนทางด้านข้อมูล ความรู้ เทคนิค เครื่องมือ และบุคลากร เมื่อมีเครื่องมือหรือเทคโนโลยีใหม่ที่ช่วยให้งานรวดเร็ว และมีประสิทธิภาพมากขึ้น บริษัทก็พร้อมที่จะลงทุนเพื่อขับเคลื่อนให้องค์กรมีความก้าวหน้าและเติบโตยิ่งขึ้น พร้อมรองรับความต้องการของลูกค้าได้มากขึ้น นอกจากนี้ บริษัทฯ ยังได้ขยายสาขาไปยังจังหวัดต่างๆ เช่น ขอนแก่น และ กาญจนบุรี เพื่อให้บริการลูกค้าได้อย่างรวดเร็วทันเวลา และตั้งเป้าหมายที่จะขยายสาขาให้ครอบคลุมทั่วถึงทุกพื้นที่ทั่วประเทศในอนาคตอีกด้วย"
+            locales[currentLanguage].ourHistory
           }
         />
         <div className="company-position">
           <PositionLeft
-            positionText={"MANAGING DIRECTOR"}
+            positionText={locales[currentLanguage].managingDirectorText}
             image1={managingDiretor2}
             image2={managingDirector1}
-            name={"คุณ ถนอม ทนุรัตนบุตร"}
-            position={"กรรมการผู้จัดการ"}
+            name={locales[currentLanguage].managingDirectorName}
+            position={locales[currentLanguage].managingDirectorText}
           />
           <PositionRight
-            positionText={"DIRECTOR"}
+            positionText={locales[currentLanguage].directorText}
             image1={comitte1}
             image2={comitte2}
-            name={"คุณ ชุติการย์ อุ้ยนอง "}
-            position={"กรรมการ"}
+            name={locales[currentLanguage].directorName}
+            position={locales[currentLanguage].directorText}
           />
           <PositionLeft
-            positionText={"TEMPORARY FACTORY MANAGER"}
+            positionText={locales[currentLanguage].factoryManagerText}
             image1={factoryManager1}
             image2={factoryManager2}
-            name={"คุณ ทรงกด กองเพชร"}
-            position={"รักษาการผู้จัดการโรงงาน"}
+            name={locales[currentLanguage].factoryManagerName}
+            position={locales[currentLanguage].factoryManagerText}
           />
           <PositionRight
-            positionText={"SALE MANAGER"}
+            positionText={locales[currentLanguage].saleManagerText}
             image1={saleManagement1}
             image2={saleManagement2}
-            name={"คุณ ณัฐวุฒิ วิชัยยุทธ"}
-            position={"ผู้จัดการฝ่ายขาย"}
+            name={locales[currentLanguage].saleManagerName}
+            position={locales[currentLanguage].saleManagerText}
           />
         </div>
         <div>

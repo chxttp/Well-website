@@ -13,6 +13,27 @@ img {
   width: 115px;
   cursor: pointer;
 }
+.language-en{
+  width: 2%;
+  margin-left: 2%;
+  
+
+}
+.language-th{
+  margin-left: 0.5%;
+  width: 2%;
+
+ 
+ 
+}
+.language-en.selected {
+  filter: contrast(0.5); /* Adjust contrast as needed */
+}
+
+.language-th.selected {
+  filter: contrast(0.5); /* Adjust contrast as needed */
+}
+
 
 header {
   display: flex;
@@ -44,7 +65,7 @@ nav a {
   /* color: #f9f9fa; */
   color: #e3e1e0;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Sukhumvit', sans-serif;
 }
 
@@ -77,7 +98,7 @@ header .nav-btn {
   position: absolute; /* Overlays content when open */
   top: 80px; /* Adjust based on your navbar height */
   left: 0;
-  height: 300px;
+  height: 400px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -102,8 +123,6 @@ nav .nav-close-btn {
   right: 2rem;
 }
 
-
-
 header {
   padding: 0 1rem 0 2rem;
 }
@@ -112,11 +131,22 @@ header {
   padding-top: 100px; /* Adjust based on your navbar height */
 }
 
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
   }
+  .language-en{
+    width: 4%;
+    margin-left: 0%;
+  }
+  .language-th{
+    margin-left: 0%;
+    width: 4%;
+   
+  }
+ 
 
   header nav {
     display: flex;

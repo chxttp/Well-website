@@ -9,6 +9,7 @@ import "../styles/Home.css";
 import image3 from "../Images/image3.jpeg";
 import image4 from "../Images/image4.jpeg";
 import image5 from "../Images/image5.png";
+import locales from "../data/locales";
 import image6 from "../Images/image6.jpeg";
 import allCertificate from "../Images/all-certifiicate.png";
 // eslint-disable-next-line
@@ -17,6 +18,7 @@ import VideoSlider from "../component/VideoSlide";
 import ServiceShowcase from "../component/ServiceShowcase";
 import { useNavigate } from "react-router-dom";
 function Home() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const navigate = useNavigate();
   const homeBanter = [image3, image4, image5, image6];
   
@@ -26,7 +28,7 @@ function Home() {
   }, []);
 
   const handleShowMoreClick = () => {
-    navigate("/certificate");
+    navigate(`/${localStorage.getItem('defaultLanguage')}/certificate`);
   };
   
 
@@ -35,7 +37,7 @@ function Home() {
     
     <div className="home-container">
       <div className="NavBar">
-        <Navbar />
+        <Navbar/>
       </div>
       <div className="Banner">
         <Banner images={homeBanter} />
@@ -57,7 +59,7 @@ function Home() {
 
       <div className="Certificate">
         <div className="Certificate-section-text">
-          <h3>CERTIFICATE</h3>
+          <h3>{locales[currentLanguage].certificateText}</h3>
         </div>
         <div className="Certificate-img">
           <img src={allCertificate} alt="" />

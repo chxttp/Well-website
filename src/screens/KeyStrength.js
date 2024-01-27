@@ -7,12 +7,14 @@ import strength4 from "../Images/strength4.png";
 import strength5 from "../Images/strength5.png";
 import strength6 from "../Images/strength6.png";
 import DownloadFile from "../component/DownloadFile";
+import locales from "../data/locales";
 
 import "../styles/KeyStrength.css";
 import strengthBanner from "../Images/strengthBanner.jpeg";
 import StrengthPolicy from "../component/StrengthPolicy";
 import StrengthCertified from "../component/StrengthCertified";
 function KeyStrength() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const homeBanter = [strengthBanner];
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,7 +33,7 @@ function KeyStrength() {
       </div>
       <div className="key-strength-certified">
         <div className="key-strength-certified-title">
-          <h2>CERTIFIED</h2>
+          <h2>{locales[currentLanguage].certifiedText}</h2>
         </div>
 
         <StrengthCertified

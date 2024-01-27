@@ -15,7 +15,9 @@ import maemoh5 from '../Images/maemoh6.jpg'
 import maemoh6 from '../Images/maemoh7.jpg'
 import maemoh7 from '../Images/maemoh8.jpg'
 import maemoh8 from '../Images/maemoh9.jpg'
+import locales from "../data/locales";
 function Maemoh() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const homeBanter = [maemohBanner];
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,7 +34,7 @@ function Maemoh() {
       </div>
       <div className="Maemoh-detail">
         <div className="Performance-detail">
-          <PerformanceDetail title={'งานเหมืองเเม่เมาะ'} date={'Date : 28 Nov 2023'} image1={maemoh1} image2={maemoh2} image3={maemoh3} image4={maemoh4} image5={maemoh5} image6={maemoh6} image7={maemoh7} image8={maemoh8} text={'Preventive Maintenance (PM) AC MOTOR SLIP RING 1000kW. เหมืองแม่เมาะ จ.ลำปาง เหมืองแร่ถ่านหินลิกไนต์ ที่ใหญ่ที่สุดในประเทศไทย'}/>
+          <PerformanceDetail title={locales[currentLanguage].performance1Title} date={'Date : 28 Nov 2023'} image1={maemoh1} image2={maemoh2} image3={maemoh3} image4={maemoh4} image5={maemoh5} image6={maemoh6} image7={maemoh7} image8={maemoh8} text={locales[currentLanguage].performance1Text}/>
         </div> 
 
         <div className="Performance-list">

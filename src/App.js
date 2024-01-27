@@ -16,36 +16,50 @@ import Hongsa from '../src/screens/Hongsa'
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
+  
 
   useEffect(() => {
-    // Simulate loading time with a setTimeout
+    
     const loadingTimer = setTimeout(() => {
       setIsLoaded(true);
-    }, 500); // Adjust the time as needed
+    }, 500); 
 
-    // Cleanup the timer to avoid memory leaks
     return () => clearTimeout(loadingTimer);
   }, []);
 
+  
+  
+  const defaultLanguage = localStorage.getItem('defaultLanguage') || 'th' || 'en';
   return (
     <ParallaxProvider>
       <Router>
-      {!isLoaded && (window.location.pathname === '/' || window.location.pathname === '/home') && (
+      {!isLoaded && (window.location.pathname === `/`) && (
         <LoadingScreen />
       )}
       {isLoaded && (
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/certificate" element={<CertificatePage />} />
-          <Route path="/strength" element={<KeyStrength />} />
-          <Route path="/performance" element={<Performance />} />
-          <Route path="/เหมืองเเม่เมาะ" element={<Maemoh />} />
-          <Route path="/การประปา" element={<Prapa/>} />
-          <Route path="/โรงไฟฟ้าหงสา" element={<Hongsa/>} />
+           <Route path={`/`} element={<Navigate to={`/${defaultLanguage}/home`} replace />} />
+            <Route path={`/en/home`} element={<Home />} />
+            <Route path={`/th/home`} element={<Home />} />
+            <Route path={`/en/aboutus`} element={<AboutUs />} />
+            <Route path={`/th/aboutus`} element={<AboutUs />} />
+            <Route path={`/en/contact`} element={<ContactUs />} />
+            <Route path={`/th/contact`} element={<ContactUs />} />
+            <Route path={`/en/service`} element={<Service />} />
+            <Route path={`/th/service`} element={<Service />} />
+            <Route path={`/en/certificate`} element={<CertificatePage />} />
+            <Route path={`/th/certificate`} element={<CertificatePage />} />
+            <Route path={`/en/strength`} element={<KeyStrength />} />
+            <Route path={`/th/strength`} element={<KeyStrength />} />
+            <Route path={`/en/performance`} element={<Performance />} />
+            <Route path={`/th/performance`} element={<Performance />} />
+            <Route path={`/en/เหมืองเเม่เมาะ`} element={<Maemoh />} />
+            <Route path={`/th/เหมืองเเม่เมาะ`} element={<Maemoh />} />
+            <Route path={`/en/การประปา`} element={<Prapa />} />
+            <Route path={`/th/การประปา`} element={<Prapa />} />
+            <Route path={`/en/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
+            <Route path={`/th/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
+            
         </Routes>
       )}
     </Router>

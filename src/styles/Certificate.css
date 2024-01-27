@@ -37,7 +37,7 @@
   .Certificate-card {
     padding-top: 5%;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    flex-wrap: wrap; 
     
     padding-left: 7%;
    padding-right: 7%;

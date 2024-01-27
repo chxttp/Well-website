@@ -8,6 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
+import locales from "../data/locales";
 import { EffectCoverflow, Pagination, Autoplay  } from 'swiper/modules';
 // import serviceMotor1 from "../Images/service-motor1.png";
 // import serviceGenerator1 from "../Images/service-generator1.png"
@@ -24,12 +25,13 @@ import showcase7 from '../Images/showcase7.jpg'
 
 
 const ServiceShowcase = () => {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   
 
   return (
     <div className='swiper-container'>
        <div className="swiper-text">
-        <h3>SERVICES</h3>
+        <h3>{locales[currentLanguage].serviceText2}</h3>
       </div>
 
       <Swiper

@@ -2,6 +2,7 @@ import strength2 from '../Images/strength2.jpeg'
 import {  Reveal } from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
 import '../styles/StrengthPolicy.css'
+import locales from "../data/locales";
 const fadeInLeft = keyframes`
   0% {
     opacity: 0;
@@ -16,6 +17,7 @@ const fadeInLeft = keyframes`
 `;
 
 function StrengthPolicy() {
+  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
     return (
         <div className="key-strength-wrapper">
         <div className="key-strength-photo-container">
@@ -32,31 +34,16 @@ function StrengthPolicy() {
         </div>
         <div className="key-strength-text-container">
           <div className="text-box">
-            <h2>นโยบายของเรา</h2>
+            <h2>{locales[currentLanguage].policyName}</h2>
             <p>
-              "ตรงต่อเวลา คุณภาพมาตรฐาน คือบริการของเวล"
-              สิ่งสำคัญที่ทำให้ลูกค้าเชื่อมั่นและไว้วางใจบริษัทมายาวนาน
-              คือการรักษามาตรฐาน 2 อย่างให้คงที่เสมอ นั่นคือ "ตรงต่อเวลา" และ
-              "คุณภาพของงาน"จากประสบการณ์ที่ผ่านมา
-              เราได้เรียนรู้และตระหนักถึงความสำคัญของ "เวลา"
-              ที่ส่งผลต่อธุรกิจของลูกค้าอย่างมาก ดังนั้น
-              หากมีความเสียหายเกิดขึ้นกับมอเตอร์ซึ่งทำให้การผลิตสินค้าต้องหยุดชะงัก
-              ทางบริษัทสามารถเป็นอีกหนึ่งแรงสนับสนุน ธุรกิจของลูกค้าได้
-              ด้วยการให้บริการแก้ไขปัญหา ซ่อมแซม
-              และส่งมอบมอเตอร์กลับให้ลูกค้าโดยเร็วที่สุด
-              เพื่อให้ทันตามกำหนดนัดหมาย และเพื่อรักษาผลประโยชน์ของ
-              ลูกค้าให้ได้มากที่สุด
+              {locales[currentLanguage].policyText}
             </p>
           </div>
           <div className="text-box">
             {/* <h2>Text Box 2</h2> */}
             <p>
-              นอกจากนี้ เรายังให้ความสำคัญในเรื่องของ "คุณภาพของงาน"
-              แม้ว่างานจะเร่ง ด่วนเพียงใด
-              ทีมงานทุกคนจะต้องยึดมั่นในเรื่องการรักษาคุณภาพการทำงานให้ได้ตามมาตรฐานของบริษัท
-              และที่สำคัญ
-              เรามีทีมงานที่มีความรู้และความเชี่ยวชาญในงานอย่างแท้จริง
-              เพื่อสานต่อและดำเนินการให้ประสบความสำเร็จตามเป้าหมาย
+            {locales[currentLanguage].policyText2}
+              
             </p>
           </div>
         </div>
