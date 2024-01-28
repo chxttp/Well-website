@@ -12,32 +12,28 @@ import image5 from "../Images/image5.png";
 import locales from "../data/locales";
 import image6 from "../Images/image6.jpeg";
 import allCertificate from "../Images/all-certifiicate.png";
-// eslint-disable-next-line
-import VideoPlayer from "../component/VideoPlayer";
 import VideoSlider from "../component/VideoSlide";
 import ServiceShowcase from "../component/ServiceShowcase";
 import { useNavigate } from "react-router-dom";
+
 function Home() {
   const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
   const navigate = useNavigate();
   const homeBanter = [image3, image4, image5, image6];
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
     document.querySelector(".home-container").classList.add("fade-in");
   }, []);
 
   const handleShowMoreClick = () => {
-    navigate(`/${localStorage.getItem('defaultLanguage')}/certificate`);
+    navigate(`/${currentLanguage}/certificate`);
   };
-  
-
 
   return (
-    
     <div className="home-container">
       <div className="NavBar">
-        <Navbar/>
+        <Navbar />
       </div>
       <div className="Banner">
         <Banner images={homeBanter} />
@@ -53,7 +49,6 @@ function Home() {
         <Principle />
       </div>
       <div className="Video">
-        
         <VideoSlider />
       </div>
 
@@ -80,4 +75,3 @@ function Home() {
 }
 
 export default Home;
-

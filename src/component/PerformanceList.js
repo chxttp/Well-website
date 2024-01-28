@@ -12,13 +12,13 @@ function PerformanceList() {
   const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
     const navigate = useNavigate();
     const handleElement1Click = () => {
-        navigate(`/${localStorage.getItem('defaultLanguage')}/เหมืองเเม่เมาะ`)
+        navigate(`/${currentLanguage}/เหมืองเเม่เมาะ`)
       };
       const handleElement2Click = () => {
-        navigate(`/${localStorage.getItem('defaultLanguage')}/การประปา`)
+        navigate(`/${currentLanguage}/การประปา`)
       };
       const handleElement3Click = () => {
-        navigate(`/${localStorage.getItem('defaultLanguage')}/โรงไฟฟ้าหงสา`)
+        navigate(`/${currentLanguage}/โรงไฟฟ้าหงสา`)
       };
   return (
     <div className="performance-list-container">

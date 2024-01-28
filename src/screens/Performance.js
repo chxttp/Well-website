@@ -34,7 +34,7 @@ function Performance() {
           text={
             locales[currentLanguage].performance1Text
           }
-          path={`/${localStorage.getItem('defaultLanguage')}/เหมืองเเม่เมาะ`}
+          path={`/${currentLanguage}/เหมืองเเม่เมาะ`}
         />
         <PerformanceComponent
           imageSrc={prapa1}
@@ -42,7 +42,7 @@ function Performance() {
           text={
             locales[currentLanguage].performance2Text
           }
-          path={`/${localStorage.getItem('defaultLanguage')}/การประปา`}
+          path={`/${currentLanguage}/การประปา`}
         />
         <PerformanceComponent
           imageSrc={hongsa1}
@@ -50,7 +50,7 @@ function Performance() {
           text={
             locales[currentLanguage].performance3Text
           }
-          path={`/${localStorage.getItem('defaultLanguage')}/โรงไฟฟ้าหงสา`}
+          path={`/${currentLanguage('defaultLanguage')}/โรงไฟฟ้าหงสา`}
         />
       </div>
       <div className="download-section">
