@@ -12,6 +12,8 @@ import image5 from "../Images/image5.png";
 import locales from "../data/locales";
 import image6 from "../Images/image6.jpeg";
 import allCertificate from "../Images/all-certifiicate.png";
+// eslint-disable-next-line
+import VideoPlayer from "../component/VideoPlayer";
 import VideoSlider from "../component/VideoSlide";
 import ServiceShowcase from "../component/ServiceShowcase";
 import { useNavigate } from "react-router-dom";

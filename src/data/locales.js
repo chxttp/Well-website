@@ -21,7 +21,7 @@ const locales = {
       saleManagerText: "SALE MANAGER",
       saleManagerName: "MR.NATTAWOOT VICHAIYOOT",
       engineerText: "CONSULTING ENGINEER",
-      downloadText: "DOWNLOAD COMPANY'S BROCHURE",
+      downloadText: "DOWNLOAD BROCHURE",
       policyName: "OUR POLICY",
       policyText: '"In terms of time, standard quality is the essence of Well service. The key factors that have built trust and confidence in the company over the years are maintaining two consistent standards: being "on time" and delivering "quality work." From our past experiences, we have learned and become aware of the importance of "time," which significantly impacts our customers" business. Therefore, in the event of damage to motors that could cause a halt in product manufacturing, the company can be another strong support for customers by providing troubleshooting, repairs, and promptly returning the motors. This ensures meeting appointments and maximizing customer benefits."',
       policyText2: '"Additionally, we also emphasize the aspect of "work quality." Regardless of how urgent the task may be, every team member must be steadfast in maintaining the quality of work to meet the standards. Importantly, we have a team with genuine knowledge and expertise in the field, ensuring continuity and successful achievement of goals."',
