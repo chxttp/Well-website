@@ -26,13 +26,7 @@ img {
  
  
 }
-.language-en.selected {
-  filter: contrast(0.5); /* Adjust contrast as needed */
-}
 
-.language-th.selected {
-  filter: contrast(0.5); /* Adjust contrast as needed */
-}
 
 
 header {
