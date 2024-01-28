@@ -2,6 +2,7 @@
 
 const locales = {
     en: {
+      homeText: 'Home',
       aboutUsText: "About Us",
       serviceText: "Services",
       serviceText2: "SERVICES",
@@ -10,7 +11,7 @@ const locales = {
       contactUsText: "Contact",
       videoText: "VIDEO",
       certificateText: "CERTIFICATE",
-      ourHistory: "WEL Engineering Service Limited, established on February 21, 2001, is a dedicated service provider specializing in the comprehensive repair and maintenance of various electric motors, including power generators, water pumps, and blowers. Our commitment to delivering high-quality services on time has earned us increasing trust from our valued customers, resulting in rapid and continuous growth. To accommodate the expanding workload and a growing team, our company has strategically expanded its factory space from the initial 3-rai warehouse to a purpose-built facility on a 4-rai plot. This expansion ensures that we can meet the demands of our customers efficiently and maintain the high standards of service that define our reputation. Our diverse and skilled team comprises electrical engineers, mechanical engineers, technicians, craftsmen, assistant technicians, and laborers. All team members undergo thorough training, equipping them with the knowledge and expertise necessary to uphold our company's standards in delivering quality repair services. Continual improvement is a core focus for us, and we consistently invest in data, knowledge, technology, tools, and personnel. The company's readiness to invest in new tools and technologies that enhance work speed and efficiency underscores our commitment to organizational progress and growth, aligning with the evolving needs of our customers. In addition to our main facility, we have strategically expanded our branches to provinces such as Khon Kaen and Kanchanaburi. This expansion ensures that we can provide prompt and efficient customer service in these regions. Looking ahead, our future goal is to further extend our branch network to cover every region across the country. WEL Engineering Service Limited remains steadfast in its commitment to excellence, and our journey of growth and expansion is guided by our dedication to providing outstanding service to our customers nationwide.",
+      ourHistory: "WELL Engineering Service Limited, established on February 21, 2001, is a dedicated service provider specializing in the comprehensive repair and maintenance of various electric motors, including power generators, water pumps, and blowers. Our commitment to delivering high-quality services on time has earned us increasing trust from our valued customers, resulting in rapid and continuous growth. To accommodate the expanding workload and a growing team, our company has strategically expanded its factory space from the initial 3-rai warehouse to a purpose-built facility on a 4-rai plot. This expansion ensures that we can meet the demands of our customers efficiently and maintain the high standards of service that define our reputation. Our diverse and skilled team comprises electrical engineers, mechanical engineers, technicians, craftsmen, assistant technicians, and laborers. All team members undergo thorough training, equipping them with the knowledge and expertise necessary to uphold our company's standards in delivering quality repair services. Continual improvement is a core focus for us, and we consistently invest in data, knowledge, technology, tools, and personnel. The company's readiness to invest in new tools and technologies that enhance work speed and efficiency underscores our commitment to organizational progress and growth, aligning with the evolving needs of our customers. In addition to our main facility, we have strategically expanded our branches to provinces such as Khon Kaen and Kanchanaburi. This expansion ensures that we can provide prompt and efficient customer service in these regions. Looking ahead, our future goal is to further extend our branch network to cover every region across the country. WELL Engineering Service Limited remains steadfast in its commitment to excellence, and our journey of growth and expansion is guided by our dedication to providing outstanding service to our customers nationwide.",
       aboutUsTitle: "OUR HISTORY",
       managingDirectorText: "MANAGING DIRECTOR",
       managingDirectorName: "MR.THANOM THANURATTANABUTH",
@@ -45,6 +46,7 @@ const locales = {
       
     },
     th: {
+      homeText: 'หน้าหลัก',
       aboutUsText: "เกี่ยวกับเรา",
       serviceText: "บริการของเรา",
       serviceText2: "บริการของเรา",

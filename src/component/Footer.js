@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import logo from "../Images/logo.png";
 import logo2 from "../Images/24hours.png";
 import "../styles/Footer.css";
@@ -10,31 +10,33 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import locales from "../data/locales";
 
 function Footer() {
+  const selectedLanguage = localStorage.getItem('defaultLanguage') || 'th';
   return (
     <div className="footer">
       <div className="footer-container">
         <div className="footer-link-container">
           <div className="footer-link">
             <h4>Pages</h4>
-            <a href="/home">
-              <p>Home</p>
+            <a href={`/${selectedLanguage}/home`}>
+              <p>{locales[selectedLanguage].homeText}</p>
             </a>
-            <a href="/aboutus">
-              <p>About us</p>
+            <a href={`/${selectedLanguage}/aboutus`}>
+              <p>{locales[selectedLanguage].aboutUsText}</p>
             </a>
-            <a href="/service">
-              <p>Service</p>
+            <a href={`/${selectedLanguage}/service`}>
+              <p>{locales[selectedLanguage].serviceText}</p>
             </a>
-            <a href="/strength">
-              <p>Key Strength</p>
+            <a href={`/${selectedLanguage}/strength`}>
+              <p>{locales[selectedLanguage].keyStrengthText}</p>
             </a>
-            <a href="performance">
-              <p>Performance</p>
+            <a href={`/${selectedLanguage}/performance`}>
+              <p>{locales[selectedLanguage].performanceText}</p>
             </a>
-            <a href="/contact">
-              <p>Contact</p>
+            <a href={`/${selectedLanguage}/contact`}>
+              <p>{locales[selectedLanguage].contactUsText}</p>
             </a>
           </div>
           <div className="footer-link">
