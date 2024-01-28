@@ -50,7 +50,7 @@ function Performance() {
           text={
             locales[currentLanguage].performance3Text
           }
-          path={`/${currentLanguage('defaultLanguage')}/โรงไฟฟ้าหงสา`}
+          path={`/${currentLanguage}/โรงไฟฟ้าหงสา`}
         />
       </div>
       <div className="download-section">
