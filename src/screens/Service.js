@@ -36,7 +36,7 @@ function Service() {
       </div>
       <div className="Service-detail">
         <ServiceContent topic={locales[currentLanguage].motorTopic} imageLeft={serviceMotor1} imageRight={serviceMotor2} topic2={"Repair & Maintenance Motor"}text={locales[currentLanguage].motorText} />
-        <ServiceContent topic={locales[currentLanguage].generatorTopic} imageLeft={serviceGenerator1} imageRight={serviceGenerator2} topic2={"Repair & Maintenance Geneator"}text={locales[currentLanguage].generatorText}/>
+        <ServiceContent topic={locales[currentLanguage].generatorTopic} imageLeft={serviceGenerator1} imageRight={serviceGenerator2} topic2={"Repair & Maintenance Generator"}text={locales[currentLanguage].generatorText}/>
         <ServiceContent topic={locales[currentLanguage].transformerTopic} imageLeft={serviceDry1} imageRight={serviceDry2} topic2={"Repair & Maintenance Dry Type Transformer"}text={locales[currentLanguage].transformerText}/>
         <ServiceContent topic={locales[currentLanguage].onsiteTopic} imageLeft={serviceOnsite1} imageRight={serviceOnsite2} image3={serviceOnsite3} image4={serviceOnsite4} topic2={"Onsite Repair & Maintenance Service"}text={locales[currentLanguage].onsiteText}/>
         

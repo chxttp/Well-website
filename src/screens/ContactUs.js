@@ -116,21 +116,24 @@ function ContactUs() {
         </div>
 
         <div className="Contact-info">
-          <h2>Plan at Well Engineering Service Co., Ltd. </h2>
+          <h2>Well Engineering Service Co., Ltd. </h2>
          
           <div className="contact-details">
             <div className="contact-address-eng">
                 <h3>HEAD OFFICE</h3>
               <p>
               
-                98 m.11 Bangna-Trad Rd.-ตราด (Km23)
-                Bangsaothong Bangsaothong Samuiprakarn 10570
+                98 m.11 Bangna-Trad Rd. (Km23)
+                Bangsaothong Bangsaothong Samutprakarn 10570
               </p>
               <p>
                 <b>Phone:</b> 0 2397932 4
               </p>
               <p>
                 <b>Fax:</b> 0 2397 9330
+              </p>
+              <p>
+                <b>Email:</b> well@well-engineering.com
               </p>
             </div>
 
@@ -145,6 +148,9 @@ function ContactUs() {
               </p>
               <p>
                 <b>เเฟกซ์:</b> 0 2397 9330
+              </p>
+              <p>
+                <b>อีเมล:</b> well@well-engineering.com
               </p>
             </div>
           </div>
