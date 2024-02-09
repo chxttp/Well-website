@@ -11,6 +11,10 @@ import image4 from "../Images/image4.jpeg";
 import image5 from "../Images/image5.png";
 import locales from "../data/locales";
 import image6 from "../Images/image6.jpeg";
+// import home1 from '../Images/newhome1.jpg'
+// import home2 from '../Images/newhome2.jpg'
+// import home3 from '../Images/newhome3.jpg'
+// import home4 from '../Images/newhome4.jpg'
 import allCertificate from "../Images/all-certifiicate.png";
 // eslint-disable-next-line
 import VideoPlayer from "../component/VideoPlayer";

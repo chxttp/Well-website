@@ -12,6 +12,7 @@ import comitte1 from "../Images/ชุติการย์2.jpg";
 import comitte2 from "../Images/ชุติกา1.jpg";
 import managingDirector1 from "../Images/ถนอม1.jpg";
 import managingDiretor2 from "../Images/ถนอม2.jpg";
+// import managingDiretor3 from '../Images/tanompro.jpg'
 import saleManagement1 from "../Images/ณัฐวุฒิ1.jpg";
 import saleManagement2 from "../Images/ณัฐวุฒิ2.jpg";
 import PhotoTextComponent from "../component/PhotoTextComponent";

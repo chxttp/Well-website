@@ -13,6 +13,7 @@ import LoadingScreen from "./screens/LoadingScreen"; // Import your LoadingScree
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Prapa from "./screens/Prapa";
 import Hongsa from '../src/screens/Hongsa'
+import Reference from "./screens/Reference";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -59,6 +60,9 @@ function App() {
             <Route path={`/th/การประปา`} element={<Prapa />} />
             <Route path={`/en/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
             <Route path={`/th/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
+            <Route path={`/en/references`} element={<Reference/>} />
+            <Route path={`/th/references`} element={<Reference/>} />
+
             
         </Routes>
       )}

@@ -60,7 +60,9 @@ function Navbar() {
         <NavLink to={`/${selectedLanguage}/service`}>{locales[selectedLanguage].serviceText}</NavLink>
         <NavLink to={`/${selectedLanguage}/strength`}>{locales[selectedLanguage].keyStrengthText}</NavLink>
         <NavLink to={`/${selectedLanguage}/performance`}>{locales[selectedLanguage].performanceText}</NavLink>
+        <NavLink to={`/${selectedLanguage}/references`}>{locales[selectedLanguage].referenceText}</NavLink>
         <NavLink to={`/${selectedLanguage}/contact`}>{locales[selectedLanguage].contactUsText}</NavLink>
+        
 
         <img
           src={en}
