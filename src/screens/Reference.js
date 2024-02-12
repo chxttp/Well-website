@@ -17,7 +17,7 @@ import reference8 from '../Images/reference8.jpg'
 import reference9 from '../Images/reference9.jpg'
 import reference10 from '../Images/reference10.jpg'
 function Reference() {
-    const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+    const currentLanguage = window.location.pathname.split('/')[1] || 'th';
     const homeBanter = [referencebanter];
     useEffect(() => {
         window.scrollTo(0, 0);

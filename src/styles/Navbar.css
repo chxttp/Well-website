@@ -145,6 +145,7 @@ header {
     font-family: 'Sukhumvit', sans-serif;
   }
   
+  
 }
 @media only screen and (max-width: 1024px) {
   
@@ -153,12 +154,12 @@ header {
     opacity: 1;
   }
   .language-en{
-    width: 6%;
+    width: 3%;
     margin-left: 0%;
   }
   .language-th{
     margin-left: 0%;
-    width: 6%;
+    width: 3%;
    
   }
  

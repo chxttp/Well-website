@@ -17,7 +17,7 @@ import maemoh7 from '../Images/maemoh8.jpg'
 import maemoh8 from '../Images/maemoh9.jpg'
 import locales from "../data/locales";
 function Maemoh() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   const homeBanter = [maemohBanner];
   useEffect(() => {
     window.scrollTo(0, 0);

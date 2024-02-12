@@ -20,7 +20,7 @@ import locales from "../data/locales";
 
 
 function Service() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
     const homeBanter = [servicebanter];
     useEffect(() => {
       window.scrollTo(0, 0);

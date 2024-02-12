@@ -40,29 +40,17 @@ function App() {
       {isLoaded && (
         <Routes>
            <Route path={`/`} element={<Navigate to={`/${defaultLanguage}/home`} replace />} />
-            <Route path={`/en/home`} element={<Home />} />
-            <Route path={`/th/home`} element={<Home />} />
-            <Route path={`/en/aboutus`} element={<AboutUs />} />
-            <Route path={`/th/aboutus`} element={<AboutUs />} />
-            <Route path={`/en/contact`} element={<ContactUs />} />
-            <Route path={`/th/contact`} element={<ContactUs />} />
-            <Route path={`/en/service`} element={<Service />} />
-            <Route path={`/th/service`} element={<Service />} />
-            <Route path={`/en/certificate`} element={<CertificatePage />} />
-            <Route path={`/th/certificate`} element={<CertificatePage />} />
-            <Route path={`/en/strength`} element={<KeyStrength />} />
-            <Route path={`/th/strength`} element={<KeyStrength />} />
-            <Route path={`/en/performance`} element={<Performance />} />
-            <Route path={`/th/performance`} element={<Performance />} />
-            <Route path={`/en/เหมืองเเม่เมาะ`} element={<Maemoh />} />
-            <Route path={`/th/เหมืองเเม่เมาะ`} element={<Maemoh />} />
-            <Route path={`/en/การประปา`} element={<Prapa />} />
-            <Route path={`/th/การประปา`} element={<Prapa />} />
-            <Route path={`/en/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
-            <Route path={`/th/โรงไฟฟ้าหงสา`} element={<Hongsa />} />
-            <Route path={`/en/references`} element={<Reference/>} />
-            <Route path={`/th/references`} element={<Reference/>} />
-
+           <Route path="/:lang/home" element={<Home />} />
+            <Route path="/:lang/aboutus" element={<AboutUs />} />
+            <Route path="/:lang/contact" element={<ContactUs />} />
+            <Route path="/:lang/service" element={<Service />} />
+            <Route path="/:lang/certificate" element={<CertificatePage />} />
+            <Route path="/:lang/strength" element={<KeyStrength />} />
+            <Route path="/:lang/performance" element={<Performance />} />
+            <Route path="/:lang/เหมืองเเม่เมาะ" element={<Maemoh />} />
+            <Route path="/:lang/การประปา" element={<Prapa />} />
+            <Route path="/:lang/โรงไฟฟ้าหงสา" element={<Hongsa />} />
+            <Route path="/:lang/references" element={<Reference />} />
             
         </Routes>
       )}

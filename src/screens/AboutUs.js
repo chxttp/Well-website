@@ -27,7 +27,7 @@ function AboutUs() {
     window.scrollTo(0, 0);
     document.querySelector(".aboutUs-container").classList.add("fade-in");
   }, []);
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   return (
     <div className="aboutUs-container">
       <div className="NavBar">

@@ -9,7 +9,7 @@ import locales from "../data/locales";
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('defaultLanguage') || 'th');
+  const [selectedLanguage, setSelectedLanguage] = useState(window.location.pathname.split('/')[1] || 'th');
   const navRef = useRef();
   const location = useLocation();
 

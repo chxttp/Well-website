@@ -23,7 +23,7 @@ import ServiceShowcase from "../component/ServiceShowcase";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   const navigate = useNavigate();
   const homeBanter = [image3, image4, image5, image6];
 

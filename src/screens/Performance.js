@@ -11,7 +11,7 @@ import locales from "../data/locales";
 import "../styles/Performance.css";
 import PerformanceComponent from "../component/PerformanceComponent";
 function Performance() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
     useEffect(() => {
         window.scrollTo(0, 0);
         document.querySelector(".Performance-container").classList.add("fade-in");

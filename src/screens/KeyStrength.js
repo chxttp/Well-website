@@ -14,7 +14,7 @@ import strengthBanner from "../Images/strengthBanner.jpeg";
 import StrengthPolicy from "../component/StrengthPolicy";
 import StrengthCertified from "../component/StrengthCertified";
 function KeyStrength() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   const homeBanter = [strengthBanner];
   useEffect(() => {
     window.scrollTo(0, 0);

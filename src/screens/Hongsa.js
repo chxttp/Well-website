@@ -17,7 +17,7 @@ import hongsa7 from '../Images/hongsa8.jpg'
 import hongsa8 from '../Images/hongsa9.jpg'
 import locales from "../data/locales";
 function Maemoh() {
-    const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+    const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   const homeBanter = [hongsaBanner];
   useEffect(() => {
     window.scrollTo(0, 0);

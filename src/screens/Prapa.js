@@ -17,7 +17,7 @@ import prapa10 from '../Images/prapa10.jpg'
 import prapa11 from '../Images/prapa11.jpg'
 import locales from "../data/locales";
 function Prapa() {
-  const currentLanguage = localStorage.getItem('defaultLanguage') || 'th'; // Get the current language
+  const currentLanguage = window.location.pathname.split('/')[1] || 'th';
   const homeBanter = [prapa2];
   useEffect(() => {
     window.scrollTo(0, 0);
