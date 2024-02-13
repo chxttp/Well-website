@@ -13,7 +13,7 @@ import {
 import locales from "../data/locales";
 
 function Footer() {
-  const selectedLanguage = localStorage.getItem('defaultLanguage') || 'th';
+  const selectedLanguage = window.location.pathname.split('/')[1] || 'th';
   return (
     <div className="footer">
       <div className="footer-container">
@@ -35,6 +35,10 @@ function Footer() {
             <a href={`/${selectedLanguage}/performance`}>
               <p>{locales[selectedLanguage].performanceText}</p>
             </a>
+            <a href={`/${selectedLanguage}/references`}>
+              <p>{locales[selectedLanguage].referenceText}</p>
+            </a>
+
             <a href={`/${selectedLanguage}/contact`}>
               <p>{locales[selectedLanguage].contactUsText}</p>
             </a>
