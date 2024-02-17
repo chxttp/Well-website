@@ -16,7 +16,7 @@ function Certificate() {
     { imageUrl: image3, cardTitle: "CERTIFICATE 3", cardName: "THAI SME-GP" },
     { imageUrl: image4, cardTitle: "CERTIFICATE 4", cardName: "ISO 9001:2015" },
     { imageUrl: image5, cardTitle: "CERTIFICATE 5", cardName: "GREEN INDUSTRY LEVEL : 3" },
-    { imageUrl: image6, cardTitle: "CERTIFICATE 6", cardName: "EASA MEMBER 2023-2024" },
+    { imageUrl: image6, cardTitle: "CERTIFICATE 6", cardName: "EASA MEMBER 2024-2025" },
   ];
   return (
     <div className="Certificate-container">
